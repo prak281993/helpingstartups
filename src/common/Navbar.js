@@ -52,16 +52,16 @@ function Navbar() {
                   <Link to="/private-limited">Private Limited Company</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Limited Liability Partnership</Link>
+                  <Link to="/">Limited Liability Partnership</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">One Person Company</Link>
+                  <Link to="/">One Person Company</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Partnership Firm</Link>
+                  <Link to="/">Partnership Firm</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Proprietorship Firm</Link>
+                  <Link to="/">Proprietorship Firm</Link>
                 </li>
               </ul>
               <ul className="customnavbar__submenu-list">
@@ -69,19 +69,19 @@ function Navbar() {
                   TRADEMARK & COPYRIGHT
                 </h4>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Trademark Registration</Link>
+                  <Link to="/">Trademark Registration</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Trademark Objection</Link>
+                  <Link to="/">Trademark Objection</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Trademark Assignment</Link>
+                  <Link to="/">Trademark Assignment</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Trademark Renewal</Link>
+                  <Link to="/">Trademark Renewal</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Copyright Registration</Link>
+                  <Link to="/">Copyright Registration</Link>
                 </li>
               </ul>
               <ul className="customnavbar__submenu-list">
@@ -89,19 +89,19 @@ function Navbar() {
                   GOVT & TAX REGISTRATION
                 </h4>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">GST Registration</Link>
+                  <Link to="/">GST Registration</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">TDS Return</Link>
+                  <Link to="/">TDS Return</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Importer Exporter Code</Link>
+                  <Link to="/">Importer Exporter Code</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Professional Tax Registration</Link>
+                  <Link to="/">Professional Tax Registration</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Shops & Establishments Registration</Link>
+                  <Link to="/">Shops & Establishments Registration</Link>
                 </li>
               </ul>
               <ul className="customnavbar__submenu-list">
@@ -109,19 +109,19 @@ function Navbar() {
                   LEGAL DOCUMENTATION
                 </h4>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Non-Disclosure Agreement</Link>
+                  <Link to="/">Non-Disclosure Agreement</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Founders Agreement</Link>
+                  <Link to="/">Founders Agreement</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Term Sheet</Link>
+                  <Link to="/">Term Sheet</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Shareholders Agreement</Link>
+                  <Link to="/">Shareholders Agreement</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link href="">Share Purchase Agreement</Link>
+                  <Link to="/">Share Purchase Agreement</Link>
                 </li>
               </ul>
             </ul>
