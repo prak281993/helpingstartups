@@ -10,7 +10,7 @@ function PrivateLimitedCard() {
             <h3 class="title">Basic</h3>
           </div>
           <div class="price-value">
-            <span class="currency">&#8377</span>
+            <span class="currency">&#8377;</span>
             <span class="amount">4999</span>
           </div>
           <ul class="pricing-content">
@@ -202,7 +202,7 @@ function PrivateLimitedCard() {
             <h3 class="title">Standard</h3>
           </div>
           <div class="price-value">
-            <span class="currency">&#8377</span>
+            <span class="currency">&#8377;</span>
             <span class="amount">10000</span>
           </div>
           <ul class="pricing-content">
@@ -394,7 +394,7 @@ function PrivateLimitedCard() {
             <h3 class="title">Premium</h3>
           </div>
           <div class="price-value">
-            <span class="currency">&#8377</span>
+            <span class="currency">&#8377;</span>
             <span class="amount">15999</span>
           </div>
           <ul class="pricing-content">
