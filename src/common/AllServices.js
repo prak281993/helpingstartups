@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AllServices.scss";
 
 function AllServices() {
@@ -12,19 +13,19 @@ function AllServices() {
           <div class="section__allservices-details--links">
             <ul>
               <li>
-                <a href="private-limited.html">Private Limited Company</a>
+                <Link to='/private-limited'>Private Limited Company</Link>
               </li>
               <li>
-                <a href="#">Limited Liability Partnership</a>
+                <Link to="/">Limited Liability Partnership</Link>
               </li>
               <li>
-                <a href="#">One Person Company</a>
+                <Link to="/">One Person Company</Link>
               </li>
               <li>
-                <a href="#">Partnership Firm</a>
+                <Link to="/">Partnership Firm</Link>
               </li>
               <li>
-                <a href="#">Proprietorship Firm</a>
+                <Link to="/">Proprietorship Firm</Link>
               </li>
             </ul>
           </div>
@@ -36,19 +37,19 @@ function AllServices() {
           <div class="section__allservices-details--links">
             <ul>
               <li>
-                <a href="#">Trademark Registration</a>
+                <Link to="/">Trademark Registration</Link>
               </li>
               <li>
-                <a href="#">Trademark Objection</a>
+                <Link to="/">Trademark Objection</Link>
               </li>
               <li>
-                <a href="#">Trademark Assignment</a>
+                <Link to="/">Trademark Assignment</Link>
               </li>
               <li>
-                <a href="#">Trademark Renewal</a>
+                <Link to="/">Trademark Renewal</Link>
               </li>
               <li>
-                <a href="#">Copyright Registration</a>
+                <Link to="/">Copyright Registration</Link>
               </li>
             </ul>
           </div>
@@ -60,19 +61,19 @@ function AllServices() {
           <div class="section__allservices-details--links">
             <ul>
               <li>
-                <a href="#">GST Registration</a>
+                <Link to="/">GST Registration</Link>
               </li>
               <li>
-                <a href="#">TDS Return</a>
+                <Link to="/">TDS Return</Link>
               </li>
               <li>
-                <a href="#">Importer Exporter Code</a>
+                <Link to="/">Importer Exporter Code</Link>
               </li>
               <li>
-                <a href="#">Professional Tax Registration</a>
+                <Link to="/">Professional Tax Registration</Link>
               </li>
               <li>
-                <a href="#">Shops & Establishments Registration</a>
+                <Link to="/">Shops & Establishments Registration</Link>
               </li>
             </ul>
           </div>
@@ -84,19 +85,19 @@ function AllServices() {
           <div class="section__allservices-details--links">
             <ul>
               <li>
-                <a href="#">Non-Disclosure Agreement</a>
+                <Link to="/">Non-Disclosure Agreement</Link>
               </li>
               <li>
-                <a href="#">Founders Agreement</a>
+                <Link to="/">Founders Agreement</Link>
               </li>
               <li>
-                <a href="#">Term Sheet</a>
+                <Link to="/">Term Sheet</Link>
               </li>
               <li>
-                <a href="#">Shareholders Agreement</a>
+                <Link to="/">Shareholders Agreement</Link>
               </li>
               <li>
-                <a href="#">Share Purchase Agreement</a>
+                <Link to="/">Share Purchase Agreement</Link>
               </li>
             </ul>
           </div>
@@ -104,9 +105,9 @@ function AllServices() {
       </div>
       <div class="section__allservices-button">
         <span class="section__allservices-details-custom-btn">
-          <a href="#popup" class="custom-btn custom-btn--outline">
+          <Link href="#popup" class="custom-btn custom-btn--outline">
             View All Services
-          </a>
+          </Link>
         </span>
       </div>
     </section>
