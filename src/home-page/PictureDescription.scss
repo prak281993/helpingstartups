@@ -1,0 +1,129 @@
+@import "../sass/variables.scss";
+@import "../sass//buttons.scss";
+.section {
+  &-picture-description {
+    height: 100%;
+    display: flex;
+  }
+
+  &__picture-description {
+    width: 100%;
+    margin: auto;
+    background: $color-white-primary;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--1 {
+      width: 50%;
+      height: 35rem;
+      background: linear-gradient(
+          to right bottom,
+          rgba($color-white-primary, 0.9),
+          rgba($color-white-primary, 0.9)
+        ),
+        url(/assets/business-associate.jpg) no-repeat center;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 2rem;
+    }
+    &--2 {
+      width: 50%;
+      height: 35rem;
+      background-image: url(/assets/handshake.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &--3 {
+      width: 50%;
+      height: 35rem;
+      background: linear-gradient(
+          to right bottom,
+          rgba($color-dark-1, 0.8),
+          rgba($color-dark-2, 0.8)
+        ),
+        url(/assets/bookshelf.jpg) no-repeat center;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & > * {
+        width: 50%;
+      }
+    }
+
+    &--4 {
+      width: 50%;
+      height: 35rem;
+      background: linear-gradient(
+          to right bottom,
+          rgba($color-white-primary, 0.7),
+          rgba($color-white-primary, 0.7)
+        ),
+        url(/assets/lawbook.jpg) no-repeat center;
+      background-size: 100%;
+    }
+  }
+
+  &__picture-heading {
+    text-align: center;
+    &--main-1 {
+      display: block;
+      font-size: 2.5rem;
+      color: $color-dark-1;
+    }
+    &--sub-1 {
+      display: block;
+      font-size: 2rem;
+      color: $color-dark-2;
+    }
+
+    &--main-3 {
+      display: block;
+      font-size: 2.5rem;
+      color: $color-white-primary;
+      border: 1px solid $color-white-primary;
+      padding: 1rem 0;
+    }
+
+    &--sub-3 {
+      display: block;
+      margin-top: 2rem;
+      font-size: 2rem;
+      color: $color-white-primary;
+    }
+  }
+
+  &__picture-content-1 {
+    margin-top: 4rem;
+    text-align: center;
+    & > span {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__picture-content-3 {
+    margin-top: 3rem;
+    text-align: center;
+    color: $color-white-primary;
+    & > span {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__picture-button {
+    margin: auto;
+    & > a {
+      padding: 1.5rem 5rem;
+    }
+  }
+}

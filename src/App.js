@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomePage from "./home-page/HomePage";
+import Navbar from "./common/Navbar";
+import FeedbackAndServices from "./common/FeedbackAndServices";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PrivateLimited from "./landing-pages/private-limited/PrivateLimited";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="main-container">
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/private-limited" component={PrivateLimited} />
+          <Route path="/" component={HomePage} />
+        </Switch>
+        <FeedbackAndServices />
+      </Router>
     </div>
   );
 }

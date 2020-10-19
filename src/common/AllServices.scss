@@ -1,0 +1,133 @@
+@import "../sass/variables.scss";
+@import "../sass/buttons.scss";
+.section {
+  &-allservices {
+    height: 100%;
+    background: rgba($color-dark-1, 0.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__allservices {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__allservices-details {
+    padding: 7rem 0;
+    &--header {
+      & > h1 {
+        color: $color-white-primary;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(243, 239, 3);
+      }
+    }
+    &--links {
+      & > ul {
+        margin: auto;
+        & li {
+          &:first-child {
+            margin-top: 2.2rem;
+          }
+          &:not(:first-child) {
+            margin-top: 1.2rem;
+          }
+          position: relative;
+          list-style: none;
+          & > a {
+            color: $color-white-primary;
+            text-decoration: none;
+            font-size: 1.4rem;
+            &:hover {
+              color: $color-ocean-green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__allservices-button {
+    margin-bottom: 5rem;
+    & span {
+      font-size: 1.6rem;
+      & a {
+        font-size: inherit;
+      }
+    }
+  }
+
+  &-allservices {
+    height: 100%;
+    background: rgba($color-dark-1, 0.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__allservices {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__allservices-details {
+    padding: 7rem 0;
+    &--header {
+      & > h1 {
+        color: $color-white-primary;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(243, 239, 3);
+      }
+    }
+    &--links {
+      & > ul {
+        margin: auto;
+        & li {
+          &:first-child {
+            margin-top: 2.2rem;
+          }
+          &:not(:first-child) {
+            margin-top: 1.2rem;
+          }
+          position: relative;
+          list-style: none;
+          & > a {
+            color: $color-white-primary;
+            text-decoration: none;
+            font-size: 1.6rem;
+            &:hover {
+              color: $color-ocean-green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__allservices-button {
+    margin-bottom: 5rem;
+    & span {
+      font-size: 1.6rem;
+      & a {
+        font-size: inherit;
+      }
+    }
+  }
+}

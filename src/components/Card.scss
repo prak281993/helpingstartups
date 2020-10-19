@@ -1,0 +1,300 @@
+@import "../sass//variables.scss";
+@import "../sass//buttons.scss";
+.service-card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: 30rem;
+    height: 50rem;
+    margin: 3rem 1rem;
+    transition: all 0.5s;
+
+    &__side {
+        height: inherit;
+        transition: all 0.5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        &--front {
+            width: 100%;
+            background-color: $color-white-primary;
+        }
+
+        &--back {
+            width: 100%;
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+            }
+            &-2 {
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+            }
+            &-4 {
+                background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotate(0);
+    }
+
+    &__picture {
+        height: 15rem;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, rgba($color-dark-1, 0.8), rgba($color-dark-1, 0.8));
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 80%;
+        text-align: center;
+        color: $color-white;
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+
+        &-span {
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            line-height: 4rem;
+
+            &--1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
+                );
+            }
+
+            &--2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
+                );
+            }
+
+            &--3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
+                );
+            }
+
+            &--4 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-dark-2, 0.8),
+                    rgba($color-dark-2, 0.8)
+                );
+            }
+        }
+    }
+
+    &__details {
+        padding: 1rem;
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+
+            li {
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__price-box {
+        margin-bottom: 8rem;
+        text-align: center;
+        color: $color-white-primary;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 4.5rem;
+        font-weight: 300;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        width: 35rem;
+        height: 46rem;
+        margin: 3rem 2rem;
+    }
+
+    @media only screen and (min-width: 1050px) and (max-width: 1079px) {
+        width: 25rem;
+        height: 46rem;
+        margin: 3rem 0.5rem;
+    }
+
+    @media only screen and (min-width: 1079px) and (max-width: 1400px) {
+        width: 26rem;
+        height: 46rem;
+        margin: 3rem 0.5rem;
+    }
+}
+
+.trademark-card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: 23rem;
+    height: 22rem;
+    margin: 3rem 1rem;
+    transition: all 0.5s;
+
+    &__side {
+        height: inherit;
+        transition: all 0.5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        &--front {
+            width: 100%;
+            background-color: $color-white-primary;
+        }
+
+        &--back {
+            width: 100%;
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-ocean-green, 0.8),
+                    rgba($color-ocean-green, 0.8)
+                );
+            }
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-ocean-green, 0.8),
+                    rgba($color-ocean-green, 0.8)
+                );
+            }
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-ocean-green, 0.8),
+                    rgba($color-ocean-green, 0.8)
+                );
+            }
+            &-4 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-ocean-green, 0.8),
+                    rgba($color-ocean-green, 0.8)
+                );
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotate(0);
+    }
+
+    &__heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        color: $color-dark-1;
+        padding: 1.8rem 0;
+    }
+    &__details {
+        ul {
+            list-style: none;
+            margin: 0 auto;
+
+            li {
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey;
+                }
+            }
+        }
+    }
+    &__price-box {
+        background-color: $color-ocean-green;
+        width: 100%;
+        padding: 1.8rem 0;
+        color: $color-white;
+        text-align: center;
+        & > h3 {
+            font-size: 1.6rem;
+        }
+    }
+    &__cta {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

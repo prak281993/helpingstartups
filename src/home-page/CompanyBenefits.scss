@@ -1,0 +1,171 @@
+@import "../sass//variables.scss";
+@import "../sass//buttons.scss";
+
+.section {
+  &-company-benefits {
+    height: 100%;
+    display: flex;
+  }
+
+  &__company-benefits {
+    width: 100%;
+    margin: auto;
+    background: $color-white-primary;
+    position: relative;
+    padding: 5rem 5rem;
+  }
+
+  &__company-header {
+    top: 5rem;
+
+    span h3 {
+      text-align: center;
+      font-size: 4rem;
+      color: $color-dark-1;
+    }
+
+    span h6 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: $color-dark-2;
+    }
+  }
+
+  &__company-details {
+    margin-top: 5rem;
+    box-sizing: border-box;
+
+    &--top {
+      width: 90%;
+      margin: auto;
+      padding: 0 5rem;
+      & > p {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+
+    &--bottom {
+      width: 100%;
+      margin: 10rem auto;
+      justify-content: space-around;
+      font-family: arial, sans-serif;
+      display: flex;
+    }
+
+    &-icons-item {
+      display: -webkit-box;
+      display: flex;
+    }
+
+    &-icon {
+      padding: 1em 2em;
+      z-index: 5;
+    }
+
+    &-link {
+      width: 15rem;
+      height: 10rem;
+      display: flex;
+    }
+
+    &-link--1 {
+      background-image: url(/assets/svg/on-time-delivery.svg);
+      background-size: 15rem 10rem;
+      background-repeat: no-repeat;
+    }
+    &-link--2 {
+      background-image: url(/assets/svg/transparent-pricing.svg);
+      background-size: 15rem 10rem;
+      background-repeat: no-repeat;
+    }
+    &-link--3 {
+      background-image: url(/assets/svg/tech-driven-paltform.svg);
+      background-size: 15rem 10rem;
+      background-repeat: no-repeat;
+    }
+    &-link--4 {
+      background-image: url(/assets/svg/confidentiality.svg);
+      background-size: 15rem 10rem;
+      background-repeat: no-repeat;
+    }
+    &-link--5 {
+      background-image: url(/assets/svg/expert-team.svg);
+      background-size: 15rem 10rem;
+      background-repeat: no-repeat;
+    }
+
+    &-text {
+      position: absolute;
+      width: 400px;
+      box-sizing: border-box;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(-50%, 50px);
+      transition: 0.5s;
+      & > div {
+        border: 2px solid $color-ocean-green;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        margin: 1em 0;
+        & h1 {
+          color: $color-ocean-green;
+          font-size: 1.8rem;
+          margin: 0;
+          padding: 0 0 0.5em 0;
+          letter-spacing: 0.1em;
+        }
+
+        & p {
+          margin: 0;
+          color: $color-dark-2;
+          padding: 0;
+          line-height: 150%;
+          font-size: 1.3rem;
+        }
+      }
+      &:nth-child(1) {
+        bottom: 25px;
+      }
+      &:nth-child(2) {
+        bottom: 35px;
+      }
+    }
+
+    &-link:hover &-text {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    &-btn {
+      margin-top: 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-about {
+      margin: 1.6rem auto;
+      text-align: center;
+      & > p {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    &__company-details {
+      display: flex;
+      flex-direction: column;
+      &--left {
+        width: 100%;
+      }
+
+      &--right {
+        width: 100%;
+      }
+    }
+  }
+}

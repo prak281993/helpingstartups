@@ -1,0 +1,46 @@
+@import "../sass/variables.scss";
+.section {
+  &-customerfeedback {
+    height: 100%;
+    display: flex;
+    background: rgba($color-dark-1, 0.4);
+  }
+
+  &__customerfeedback {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 5rem 5rem;
+    &-header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $color-white-primary;
+    }
+    &-carousel {
+      margin: auto;
+      width: 80%;
+      position: relative;
+    }
+    &-slide {
+      color: $color-white-primary;
+      box-sizing: border-box;
+      padding: 5rem;
+      width: 80%;
+      margin: auto;
+      &-comment {
+        font-size: 1.8rem;
+        font-family: "Sansita Swashed", cursive;
+        & p {
+          margin: auto;
+          text-align: center;
+        }
+      }
+      &-customer {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    }
+  }
+}

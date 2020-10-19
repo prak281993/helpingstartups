@@ -1,0 +1,106 @@
+@import "../../sass//variables.scss";
+@import "../../sass//buttons.scss";
+.private-limited {
+  &__allcontents {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10rem;
+  }
+
+  &__about {
+    &-header h1 {
+      font-size: 3.6rem;
+      color: $color-dark-blue;
+    }
+    &-content {
+      padding: 2rem 5rem;
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__features {
+    &-header h1 {
+      font-size: 3.6rem;
+      color: $color-dark-blue;
+    }
+    &-content {
+      padding: 2rem 5rem;
+      font-size: 1.6rem;
+      & ol {
+        margin: 0 0 1.5em;
+        padding: 0;
+        counter-reset: item;
+      }
+
+      & ol > li {
+        margin: 0;
+        padding: 0 0 0 2em;
+        text-indent: -2em;
+        list-style-type: none;
+        counter-increment: item;
+      }
+      & ol > li:before {
+        display: inline-block;
+        width: 1em;
+        padding-right: 0.5em;
+        font-weight: bold;
+        text-align: right;
+        content: counter(item) ".";
+      }
+    }
+  }
+
+  &__requirements {
+    &-header > h1 {
+      font-size: 3.6rem;
+      color: $color-dark-blue;
+    }
+    &-content {
+      padding: 2rem 5rem;
+    }
+    &-content-card {
+      & .card-body > h5 {
+        font-size: 1.8rem;
+      }
+      & .card-body,
+      li {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__procedure {
+    margin-top: 2rem;
+    &-header h1 {
+      font-size: 3.6rem;
+      color: $color-dark-blue;
+    }
+    &-content {
+      padding: 2rem 5rem;
+      font-size: 1.6rem;
+      & ol {
+        margin: 0 0 1.5em;
+        padding: 0;
+        counter-reset: item;
+      }
+
+      & ol > li {
+        margin: 0;
+        padding: 0 0 0 2em;
+        text-indent: -2em;
+        list-style-type: none;
+        counter-increment: item;
+      }
+      & ol > li:before {
+        display: inline-block;
+        width: 1em;
+        padding-right: 0.5em;
+        font-weight: bold;
+        text-align: right;
+        content: counter(item) ".";
+      }
+    }
+  }
+}

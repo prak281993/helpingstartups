@@ -1,0 +1,204 @@
+@import '../sass//variables.scss';
+.customnavbar {
+    display: flex;
+    margin: auto;
+    height: 10%;
+    align-items: center;
+    background: linear-gradient(
+      rgba($color-dark-1, 0.9),
+      rgba($color-dark-1, 0.9)
+    );
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  
+    &__logo-container {
+      flex: 1;
+      color: white;
+      letter-spacing: 0.5rem;
+      & > h4 {
+        margin-left: 2rem;
+        font-size: 3rem;
+      }
+    }
+  
+    &__nav {
+      flex: 1;
+      color: white;
+    }
+  
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      width: 80%;
+      box-sizing: border-box;
+    }
+  
+    &__item {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      &:hover {
+        background-color: $color-dark-2;
+      }
+      & > a:hover {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 2rem;
+      }
+      & .customnavbar__submenu {
+        display: flex;
+        padding: 40px;
+        position: absolute;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-evenly;
+        background: linear-gradient(
+          rgba($color-dark-1, 0.9),
+          rgba($color-dark-1, 0.9)
+        );
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        top: -9999px;
+        left: 0;
+        width: 100vw;
+  
+        &-list {
+          padding: 20px;
+          &-header {
+            font-size: 1.8rem;
+            color: rgb(243, 239, 3);
+          }
+          & > li {
+            list-style: none;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            & > a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: $color-ocean-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    &__list--item2:hover &__submenu {
+      top: 10vh;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 2rem;
+    }
+  
+    &__menu-lines {
+      margin-right: 5rem;
+      display: none;
+      cursor: pointer;
+      div {
+        width: 30px;
+        height: 4px;
+        margin: 5px;
+        background-color: $color-white;
+        transition: all 0.5s;
+      }
+    }
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-6px, 7px);
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      &__logo-container {
+        flex: 1;
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        & > h4 {
+          margin-left: 1rem;
+        }
+      }
+      &__nav {
+        flex: 2;
+      }
+      &__item {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+      }
+    }
+  
+    @media only screen and (max-width: 768px) {
+      &__logo-container {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+      }
+      &__list {
+        z-index: 1000;
+        width: 50%;
+        position: fixed;
+        right: 0px;
+        min-height: 90%;
+        top: 10%;
+        background: linear-gradient(
+          rgba($color-dark-1, 1),
+          rgba($color-dark-1, 1)
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s all;
+      }
+  
+      &__nav {
+        display: none;
+      }
+  
+      .nav-visible {
+        display: block;
+      }
+  
+      &__item {
+        opacity: 0;
+      }
+  
+      &__link {
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+      }
+  
+      &__menu-lines {
+        display: block;
+      }
+    }
+  
+    .nav-active {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
