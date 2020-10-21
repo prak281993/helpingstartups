@@ -3,7 +3,7 @@ import "./Card.scss";
 
 function TrademarkCard({ heading, listItems, price }) {
   return (
-    <div class="trademark-card">
+    <div class="trademark-card" data-aos="zoom-in">
       <div class="trademark-card__side trademark-card__side--front">
         <div class="trademark-card__heading">
           <span class="trademark-card__heading-span">{heading}</span>

@@ -5,7 +5,7 @@ function ServiceIcons() {
   return (
     <section class="section section-service-icons">
       <div class="section__service-icons">
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-right">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--1">
               <svg
@@ -223,7 +223,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">PROPRIETORSHIP REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-right">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--2">
               <svg
@@ -480,7 +480,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">COMPANY REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="flip-left">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--3">
               <svg
@@ -588,7 +588,7 @@ function ServiceIcons() {
             LLP/PARTNERSHIP REGISTRATION
           </span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-left">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--9">
               <svg
@@ -724,7 +724,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">MSME REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-left">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--7">
               <svg
@@ -783,7 +783,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">TRADEMARK SERVICES</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-right">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--6">
               <img src="/assets//icon-images/tax.svg" alt="" />
@@ -791,7 +791,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">GST RETURN</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-right">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--4">
               <svg
@@ -864,7 +864,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">FSSAI FOOD LICENCE</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="flip-right">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--5">
               <svg
@@ -934,7 +934,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">IMPORT EXPORT CODE</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-left">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--8">
               <svg
@@ -991,7 +991,7 @@ function ServiceIcons() {
           </span>
           <span class="section__service-text">STARTUP INDIA REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item">
+        <div class="section__service-icons-item" data-aos="fade-left">
           <span class="section__service-icon">
             <a href="#" class="section__service-link section__service-link--10">
               <img src="/assets//icon-images/gst registration.jpg" alt="" />

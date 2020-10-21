@@ -3,7 +3,7 @@ import "./Card.scss";
 
 function ServiceCard({ heading, listItems, price }) {
   return (
-    <div class="service-card">
+    <div class="service-card" data-aos="zoom-in">
       <div class="service-card__side service-card__side--front">
         <div class="service-card__picture service-card__picture--1"></div>
         <h4 class="service-card__heading">
