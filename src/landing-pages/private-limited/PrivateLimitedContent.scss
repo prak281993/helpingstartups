@@ -10,12 +10,20 @@
   &__about {
     &-header h1 {
       font-size: 3.6rem;
-      color: $color-dark-blue;
+      font-family: "Josefin Sans", sans-serif;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark,10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &-content {
       padding: 2rem 5rem;
       & p {
         font-size: 1.6rem;
+        font-family: 'Josefin Sans', sans-serif;
       }
     }
   }
@@ -23,11 +31,19 @@
   &__features {
     &-header h1 {
       font-size: 3.6rem;
-      color: $color-dark-blue;
+      font-family: "Josefin Sans", sans-serif;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark,10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &-content {
       padding: 2rem 5rem;
       font-size: 1.6rem;
+      font-family: 'Josefin Sans', sans-serif;
       & ol {
         margin: 0 0 1.5em;
         padding: 0;
@@ -55,12 +71,20 @@
   &__requirements {
     &-header > h1 {
       font-size: 3.6rem;
-      color: $color-dark-blue;
+      font-family: "Josefin Sans", sans-serif;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark,10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &-content {
       padding: 2rem 5rem;
     }
     &-content-card {
+      font-family: 'Josefin Sans', sans-serif;
       & .card-body > h5 {
         font-size: 1.8rem;
       }
@@ -75,11 +99,19 @@
     margin-top: 2rem;
     &-header h1 {
       font-size: 3.6rem;
-      color: $color-dark-blue;
+      font-family: "Josefin Sans", sans-serif;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark,10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &-content {
       padding: 2rem 5rem;
       font-size: 1.6rem;
+      font-family: 'Josefin Sans', sans-serif;
       & ol {
         margin: 0 0 1.5em;
         padding: 0;

@@ -36,7 +36,7 @@ function PrivateLimitedDetails() {
       </section>
       <section class="private-limited__requirements">
         <div class="private-limited__requirements-header">
-          <h1>Basic Requirements</h1>
+          <h1>BASIC REQUIREMENTS</h1>
         </div>
         <div class="private-limited__requirements-content">
           <div class="container">
