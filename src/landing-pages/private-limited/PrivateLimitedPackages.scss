@@ -1,3 +1,4 @@
+@import '../../sass//variables.scss';
 .private-limited {
   &__packages {
     background: #fff;
@@ -7,6 +8,14 @@
       }
       & h1 {
         font-size: 3.6rem;
+        font-family: "Josefin Sans", sans-serif;
+        background-image: linear-gradient(
+          to right bottom,
+          $color-ocean-green,
+          darken($color-ocean-green-dark, 10%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-align: center;
       }
     }

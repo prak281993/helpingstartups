@@ -1,0 +1,59 @@
+@import "../sass//variables.scss";
+.timeline {
+  list-style: none;
+  position: relative;
+  padding: 2rem;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    top: 2rem;
+    bottom: 2rem;
+    left: 0;
+    background-color: rgba($color-green-general,.5);
+  }
+  &__item {
+    padding: 1rem;
+    position: relative;
+  }
+  &__badge {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    background-color: $color-green-general;
+    border-radius: 50%;
+    z-index: 20;
+    text-align: center;
+    left: -5rem;
+    top: 3.5rem;
+    color: $color-white-primary;
+  }
+  &__panel {
+    padding: 2rem;
+    margin-left: 4rem;
+    border: 3px solid rgba($color-green-general,.8);
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -3.1rem;
+      top: 2rem;
+      border-top: 3rem solid transparent;
+      border-left: 0 solid rgba($color-green-general,.8);
+      border-right: 3rem solid rgba($color-green-general,.8);
+      border-bottom: 3rem solid transparent;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: -2.6rem;
+        top: 2.4rem;
+        border-top: 2.6rem solid transparent;
+        border-left: 0 solid $color-white-primary;
+        border-right: 2.6rem solid $color-white-primary;
+        border-bottom: 2.6rem solid transparent;
+      }
+  }
+}
