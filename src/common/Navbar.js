@@ -35,7 +35,7 @@ function Navbar() {
       <div className="customnavbar__nav">
         <ul className="customnavbar__list">
           <li className="customnavbar__item customnavbar__list--item1">
-            <Link className="customnavbar__link" to="/">
+            <Link to="/" className="customnavbar__link">
               Home
             </Link>
           </li>
@@ -127,12 +127,12 @@ function Navbar() {
             </ul>
           </li>
           <li className="customnavbar__item customnavbar__list--item3">
-            <Link className="customnavbar__link" href="#">
+            <Link to="/" className="customnavbar__link">
               About us
             </Link>
           </li>
           <li className="customnavbar__item customnavbar__list--item4">
-            <Link className="customnavbar__link" href="#">
+            <Link to="/" className="customnavbar__link">
               Sign in
             </Link>
           </li>

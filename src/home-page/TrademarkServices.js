@@ -1,6 +1,6 @@
 import React from "react";
 import TrademarkCard from "../components/TrademarkCard";
-import './TrademarkServices.scss';
+import "./TrademarkServices.scss";
 
 function TrademarkServices() {
   const cardItems = [
@@ -41,7 +41,9 @@ function TrademarkServices() {
         </div>
 
         <div class="section__trademark-cards">
-          {cardItems.map(cardItem => <TrademarkCard {...cardItem} />)}
+          {cardItems.map((cardItem) => (
+            <TrademarkCard {...cardItem} />
+          ))}
         </div>
       </div>
     </section>

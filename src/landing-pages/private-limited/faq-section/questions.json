@@ -1,0 +1,38 @@
+[
+  {
+    "question":"How long does it take to register a company?",
+    "answer":"With New form total time to register a Private Limited company is 6-8 working days.To ensure speedy incorporation, please choose a unique name for your Company and ensure you have all the required documents prior to starting the incorporation process."
+  },
+  {
+    "question": "How many directors are required in a private limited company?",
+    "answer": "A private limited company must have a minimum of two Directors and can have up to a maximum of fifteen Directors. But if you are a sole owner, you can incorporate an OPC as well."
+  },
+  {
+    "question": "How long will it take to incorporate a Company in India?",
+    "answer": "It generally takes 8-10 working days to register Private Limited Company in India. The time taken for registration totally depends on the submission of relevant documents by the client and the speed of Government Approvals. To ensure quick and speedy registration, choose a unique name for your Company. The registration fees for the incorporation is inclusive in the package offered to you."
+  },
+  {
+    "question": "What is the minimum turnover and capital required for Pvt.Ltd.Co. in India?",
+    "answer": "There exists no bar on turnover or capital in private Limited Company unlike One person Company."
+  },
+  {
+    "question": "How can I register an Indian Company?",
+    "answer": "Incorporating a company through Simplified Proforma for Incorporating Company electronically (SPICe plus), with eMoA (INC-33), eAOA (INC-34), is the default option and most companies are required to be incorporated through SPICe only."
+  },
+  {
+    "question": "Do I have to physically visit ROC Office while Setting up company?",
+    "answer": "No. HelpingStartups provides complete online Company Incorporation process. All legal documentation with ROC and visits are done by HelpingStartups."
+  },
+  {
+    "question": "What is a DIN?",
+    "answer": "Director Identification Number (DIN) is a unique identification number required for a person to become a director of a company. DIN is issued by ROC office (Ministry of Corporate Affairs) It is similar to a PAN Card number.DIN is to be mentioned in documents while appointing a person as a director of a company."
+  },
+  {
+    "question": "What is a DSC?",
+    "answer": "A digital signature is electronic signature, which is in the form of codes. It is used for signing the electronic forms, filed with ROC for incorporation of Company. Digital Signature cannot be used in physical documents."
+  },
+  {
+    "question": "What is MOA & AOA of company?",
+    "answer": "MOA means Memorandum of Association and AOA means Articles of Association. These are the byelaws or rules based on which important matters like main business of the company or meetings is decided. These are standard legal documents prepared by Company Secretaries during registration of the Company."
+  }
+]

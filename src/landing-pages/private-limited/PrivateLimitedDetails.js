@@ -1,4 +1,5 @@
 import React from "react";
+import FAQs from "./faq-section/FAQs";
 
 function PrivateLimitedDetails() {
   return (
@@ -25,13 +26,40 @@ function PrivateLimitedDetails() {
           <h1>FEATURES OF A PRIVATE LIMITED COMPANY</h1>
         </div>
         <div class="private-limited__features-content">
-          <ol>
-            <li>Liability is Limited in nature</li>
-            <li>Company is a seperate legal entity</li>
-            <li>Perpetual Succession(of ongoing nature)</li>
-            <li>Accepts Foreign Direct Investment(100%)</li>
-            <li>Company is privately controlled</li>
-          </ol>
+          <ul>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Liability is Limited in nature</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Company is a seperate legal entity</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Perpetual Succession(of ongoing nature)</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Accepts Foreign Direct Investment(100%)</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Company is privately controlled</span>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="private-limited__requirements">
@@ -46,7 +74,7 @@ function PrivateLimitedDetails() {
                   <div class="card-body">
                     <h5 class="card-title">FOR A DIRECTOR</h5>
                   </div>
-                  <ul class="list-group list-group-flush">
+                  <ul class="list-group">
                     <li class="list-group-item">Must be an Indian resident</li>
                     <li class="list-group-item">
                       Minimum capital requirement is NIL
@@ -65,7 +93,7 @@ function PrivateLimitedDetails() {
                   <div class="card-body">
                     <h5 class="card-title">FOR A SUBSCRIBER</h5>
                   </div>
-                  <ul class="list-group list-group-flush">
+                  <ul class="list-group">
                     <li class="list-group-item">Can be of any Nationality</li>
                     <li class="list-group-item">
                       DSC (Digital Signature Certificate) is mandatory
@@ -86,14 +114,54 @@ function PrivateLimitedDetails() {
           <h1>PROCEDURE FOR ITS INCORPORATION</h1>
         </div>
         <div class="private-limited__procedure-content">
-          <ol>
-            <li>Apply for Digital Signatures</li>
-            <li>Obtain DIN (in advance in case of existing company)</li>
-            <li>Application for Name Reservation</li>
-            <li>Filing of Form for Registration of a Company</li>
-            <li>Certificate of Incorporation issued by Ministry</li>
-            <li>Gets company’s PAN and TAN</li>
-          </ol>
+          <ul>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Apply for Digital Signatures</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Obtain DIN (in advance in case of existing company)</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Application for Name Reservation</span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Filing of Form for Registration of a Company</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Certificate of Incorporation issued by Ministry</span>
+            </li>
+            <li>
+              <span>
+                <i className="fa fa-check"></i>
+              </span>
+              <span>Gets company’s PAN and TAN</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="private-limited__faqs">
+        <div className="private-limited__faqs-header">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+        <div className="private-limited__faqs-content">
+          <FAQs />
         </div>
       </section>
     </section>

@@ -5,134 +5,101 @@
     background-color: #ffffff;
     width: 100%;
     padding: 10rem;
-  }
-
-  &__about {
-    &-header h1 {
+    & div h1 {
       font-size: 3.6rem;
       font-family: "Josefin Sans", sans-serif;
       background-image: linear-gradient(
         to right bottom,
         $color-ocean-green,
-        darken($color-ocean-green-dark,10%)
+        darken($color-ocean-green-dark, 10%)
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-align: center;
     }
+  }
+  &__about {
     &-content {
       padding: 2rem 5rem;
       & p {
         font-size: 1.6rem;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Josefin Sans", sans-serif;
       }
     }
   }
 
   &__features {
-    &-header h1 {
-      font-size: 3.6rem;
-      font-family: "Josefin Sans", sans-serif;
-      background-image: linear-gradient(
-        to right bottom,
-        $color-ocean-green,
-        darken($color-ocean-green-dark,10%)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     &-content {
       padding: 2rem 5rem;
       font-size: 1.6rem;
-      font-family: 'Josefin Sans', sans-serif;
-      & ol {
+      font-family: "Josefin Sans", sans-serif;
+      & ul {
         margin: 0 0 1.5em;
-        padding: 0;
-        counter-reset: item;
+        display: flex;
+        justify-content: space-evenly;
       }
 
-      & ol > li {
-        margin: 0;
-        padding: 0 0 0 2em;
-        text-indent: -2em;
+      & ul > li {
+        width: 30rem;
+        padding: 0.5rem;
         list-style-type: none;
-        counter-increment: item;
-      }
-      & ol > li:before {
-        display: inline-block;
-        width: 1em;
-        padding-right: 0.5em;
-        font-weight: bold;
-        text-align: right;
-        content: counter(item) ".";
+        background-color: rgba($color-green-general, 0.8);
+        display: flex;
+        justify-content: space-around;
+        & > span {
+          padding: 0 0.5rem;
+          color: $color-white-primary;
+        }
       }
     }
   }
 
   &__requirements {
-    &-header > h1 {
-      font-size: 3.6rem;
-      font-family: "Josefin Sans", sans-serif;
-      background-image: linear-gradient(
-        to right bottom,
-        $color-ocean-green,
-        darken($color-ocean-green-dark,10%)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     &-content {
       padding: 2rem 5rem;
     }
     &-content-card {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: "Josefin Sans", sans-serif;
+      border: 2px solid $color-green-general;
       & .card-body > h5 {
         font-size: 1.8rem;
+        color: $color-green-general;
       }
       & .card-body,
       li {
         font-size: 1.6rem;
+        border: 1px solid $color-green-general;
       }
     }
   }
 
   &__procedure {
     margin-top: 2rem;
-    &-header h1 {
-      font-size: 3.6rem;
-      font-family: "Josefin Sans", sans-serif;
-      background-image: linear-gradient(
-        to right bottom,
-        $color-ocean-green,
-        darken($color-ocean-green-dark,10%)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     &-content {
       padding: 2rem 5rem;
       font-size: 1.6rem;
-      font-family: 'Josefin Sans', sans-serif;
-      & ol {
+      font-family: "Josefin Sans", sans-serif;
+      & ul {
         margin: 0 0 1.5em;
-        padding: 0;
-        counter-reset: item;
+        display: flex;
+        justify-content: space-evenly;
       }
 
-      & ol > li {
-        margin: 0;
-        padding: 0 0 0 2em;
-        text-indent: -2em;
+      & ul > li {
+        width: 30rem;
+        padding: 0.5rem;
         list-style-type: none;
-        counter-increment: item;
-      }
-      & ol > li:before {
-        display: inline-block;
-        width: 1em;
-        padding-right: 0.5em;
-        font-weight: bold;
-        text-align: right;
-        content: counter(item) ".";
+        background-color: rgba($color-green-general, 0.8);
+        display: flex;
+        justify-content: space-around;
+        & > span {
+          padding: 0 0.5rem;
+          color: $color-white-primary;
+        }
       }
     }
+  }
+  &__faqs-content {
+    margin-top: 2rem;
   }
 }

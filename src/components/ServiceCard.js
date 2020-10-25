@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.scss";
+import PropTypes from "prop-types";
 
-function ServiceCard({ heading, listItems, price }) {
+function ServiceCard({ heading, listItems, price, url }) {
   return (
-    <div class="service-card" data-aos="zoom-in">
+    <div key={heading} class="service-card" data-aos="zoom-in">
       <div class="service-card__side service-card__side--front">
         <div class="service-card__picture service-card__picture--1"></div>
         <h4 class="service-card__heading">
@@ -13,8 +15,8 @@ function ServiceCard({ heading, listItems, price }) {
         </h4>
         <div class="service-card__details">
           <ul>
-            {listItems.map((item) => (
-              <li>{item}</li>
+            {listItems.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
@@ -25,13 +27,20 @@ function ServiceCard({ heading, listItems, price }) {
             <p class="service-card__price-only">Only</p>
             <p class="service-card__price-value">&#8377; {price}</p>
           </div>
-          <a href="private-limited.html" class="custom-btn custom-btn--white">
+          <Link to={url} class="custom-btn custom-btn--white">
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
+
+ServiceCard.propTypes = {
+  heading: PropTypes.string.isRequired,
+  listItems: PropTypes.array.isRequired,
+  price: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
+};
 
 export default ServiceCard;

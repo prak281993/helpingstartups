@@ -16,6 +16,7 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 14999,
+      url:'/private-limited'
     },
     {
       heading: "Limited Liability Partnership",
@@ -29,6 +30,7 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 7999,
+      url:'/'
     },
     {
       heading: "One Person Company",
@@ -42,6 +44,7 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 17999,
+      url:'/'
     },
     {
         heading: "Section 8 Company",
@@ -55,6 +58,7 @@ function ServiceRegistration() {
           "1 DSC PAN & TAN",
         ],
         price: 24999,
+        url:'/'
       },
   ];
   return (

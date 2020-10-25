@@ -3,7 +3,7 @@ import "./Card.scss";
 
 function TrademarkCard({ heading, listItems, price }) {
   return (
-    <div class="trademark-card" data-aos="zoom-in">
+    <div key={heading} class="trademark-card" data-aos="zoom-in">
       <div class="trademark-card__side trademark-card__side--front">
         <div class="trademark-card__heading">
           <span class="trademark-card__heading-span">{heading}</span>
@@ -13,8 +13,8 @@ function TrademarkCard({ heading, listItems, price }) {
             <h3>&#8377; {price} / All Inclusive</h3>
           </div>
           <ul>
-            {listItems.map((listItem) => (
-              <li>{listItem}</li>
+            {listItems.map((listItem, index) => (
+              <li key={index}>{listItem}</li>
             ))}
           </ul>
         </div>

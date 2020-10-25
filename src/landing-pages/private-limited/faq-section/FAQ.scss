@@ -1,0 +1,42 @@
+@import "../../../sass//variables.scss";
+.faq-card {
+  margin-top: 1rem;
+  border: none;
+  &__header {
+    padding: 1.2rem;
+    background-color: rgba($color-green-general, 1);
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      darken($color-green-general, 10%) 50%
+    );
+    background-size: 220%;
+    border: none;
+    transition: all 0.5s;
+    color: $color-white-primary;
+    display: flex;
+    & div {
+      flex: 20;
+    }
+    & span {
+      flex: 1;
+      font-size: 2rem;
+    }
+    &:hover,&:active,&:focus {
+      cursor: pointer;
+      background-position: 100%;
+    }
+  }
+  &__card-body{
+      font-size: 1.6rem;
+      &:before{
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 100%;
+          left: 0;
+          background-color: $color-ocean-green;
+      }
+  }
+}
