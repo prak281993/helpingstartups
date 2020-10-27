@@ -1,28 +1,29 @@
 import React from "react";
 import './Header.scss';
+import {Link} from 'react-router-dom';
 
 function Header() {
   return (
-    <header class="header">
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">
+    <header className="header">
+      <div className="header__text-box">
+        <h1 className="heading-primary">
+          <span className="heading-primary--main">
             B2B Saas Marketing Breakthroughs
           </span>
-          <span class="heading-primary--sub1">Wake Up. Kick SAAS. Repeat.</span>
+          <span className="heading-primary--sub1">Wake Up. Kick SAAS. Repeat.</span>
         </h1>
-        <div class="header__buttons">
+        <div className="header__buttons">
           <a
-            href="#"
-            class="custom-btn custom-btn--primary custom-btn--animated"
+            href='/#section-service-registration'
+            className="custom-btn custom-btn--primary custom-btn--animated"
           >
-            Get My SaaS In Gear
+            Start a Business
           </a>
           <a
-            href="#"
-            class="custom-btn custom-btn--secondary custom-btn--animated"
+            href='/#section-trademark-services'
+            className="custom-btn custom-btn--secondary custom-btn--animated"
           >
-            Saas Marketing Insights
+            Trademark Services
           </a>
         </div>
       </div>

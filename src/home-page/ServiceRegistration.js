@@ -62,9 +62,9 @@ function ServiceRegistration() {
       },
   ];
   return (
-    <section class="section section-service-registration">
-      <div class="section__service-registration">
-        <div class="section__service-header">
+    <section id="section-service-registration" className="section section-service-registration">
+      <div className="section__service-registration">
+        <div className="section__service-header">
           <span>
             <h3>Start a Business</h3>
           </span>
@@ -73,13 +73,13 @@ function ServiceRegistration() {
           </span>
         </div>
 
-        <div class="section__service-cards">
+        <div className="section__service-cards">
           {cardItems.map(cardItem => <ServiceCard {...cardItem} />)}
         </div>
 
-        <div class="section__service-button">
+        <div className="section__service-button">
           <span>
-            <a href="#popup" class="custom-btn custom-btn--secondary">
+            <a href="#popup" className="custom-btn custom-btn--secondary">
               View All Services
             </a>
           </span>

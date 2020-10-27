@@ -26,9 +26,12 @@ function TrademarkServices() {
     },
   ];
   return (
-    <section class="section section-trademark-services">
-      <div class="section__trademark-services">
-        <div class="section__trademark-header">
+    <section
+      id="section-trademark-services"
+      className="section section-trademark-services"
+    >
+      <div className="section__trademark-services">
+        <div className="section__trademark-header">
           <span>
             <h3>Trademark Services</h3>
           </span>
@@ -40,7 +43,7 @@ function TrademarkServices() {
           </span>
         </div>
 
-        <div class="section__trademark-cards">
+        <div className="section__trademark-cards">
           {cardItems.map((cardItem) => (
             <TrademarkCard {...cardItem} />
           ))}
