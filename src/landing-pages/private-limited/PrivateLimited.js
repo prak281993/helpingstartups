@@ -1,13 +1,13 @@
 import React from 'react';
-import BackgroundImage from './BackgroundImage';
+import LandingPagesHeader from '../../common/LandingPagesHeader';
+import BackgroundImage from '../../components/BackgroundImage'
 import PrivateLimitedContent from './PrivateLimitedContent';
-import PrivateLimitedHeader from './PrivateLimitedHeader';
 
 function PrivateLimited() {
     return (
         <div>
-            <BackgroundImage />
-            <PrivateLimitedHeader />
+            <BackgroundImage imageUrl ={'/assets/private-limited-bg.jpg'} />
+            <LandingPagesHeader companyType={'Private Limited Company'} />
             <PrivateLimitedContent />
         </div>
     )

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 
-function PrivateLimitedQueryForm() {
+function QueryForm() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
@@ -26,38 +26,38 @@ function PrivateLimitedQueryForm() {
     }
   };
   return (
-    <form class="private-limited-query__form">
-      <div class="private-limited-query__form-fields">
+    <form class="landing-page-query__form">
+      <div class="landing-page-query__form-fields">
         <input
           placeholder="Full Name"
           type="text"
-          class="private-limited-query__form-field private-limited-query__form--fullname"
+          class="landing-page-query__form-field landing-page-query__form--fullname"
           onChange={(e) => setFullname(e.target.value)}
           value={fullname}
         />
         <input
           placeholder="Email Address"
           type="email"
-          class="private-limited-query__form-field private-limited-query__form--email"
+          class="landing-page-query__form-field landing-page-query__form--email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
         <input
           placeholder="Contact Number"
           type="number"
-          class="private-limited-query__form-field private-limited-query__form--contact"
+          class="landing-page-query__form-field landing-page-query__form--contact"
           onChange={(e) => setContactNumber(e.target.value)}
         />
         <textarea
           placeholder="Drop a message"
           type="text"
-          class="private-limited-query__form-field private-limited-query__form--question"
+          class="landing-page-query__form-field landing-page-query__form--question"
           onChange={(e) => setQueryMessage(e.target.value)}
           value={queryMessage}
         ></textarea>
       </div>
       <button
-        class="btn btn-primary private-limited-query__form-button"
+        class="btn btn-primary landing-page-query__form-button"
         type="button"
         onClick={sendMail} 
       >
@@ -67,4 +67,4 @@ function PrivateLimitedQueryForm() {
   );
 }
 
-export default PrivateLimitedQueryForm;
+export default QueryForm;

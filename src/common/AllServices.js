@@ -16,16 +16,16 @@ function AllServices() {
                 <Link to='/private-limited'>Private Limited Company</Link>
               </li>
               <li>
-                <Link to="/">Limited Liability Partnership</Link>
+                <Link to="/limited-liability">Limited Liability Partnership</Link>
               </li>
               <li>
-                <Link to="/">One Person Company</Link>
+                <Link to="/one-person-company">One Person Company</Link>
               </li>
               <li>
-                <Link to="/">Partnership Firm</Link>
+                <Link to="/partnership-firm">Partnership Firm</Link>
               </li>
               <li>
-                <Link to="/">Proprietorship Firm</Link>
+                <Link to="/proprietorship-firm">Proprietorship Firm</Link>
               </li>
             </ul>
           </div>

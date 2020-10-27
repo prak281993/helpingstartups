@@ -137,42 +137,22 @@ function PrivateLimitedDetails() {
         <div class="private-limited__procedure-content">
           <ul>
             <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Apply for Digital Signatures</span>
+              <div>Apply for Digital Signatures</div>
             </li>
             <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Obtain DIN (in advance in case of existing company)</span>
+              <div>Obtain DIN (in advance in case of existing company)</div>
             </li>
             <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Application for Name Reservation</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Filing of Form for Registration of a Company</span>
+              <div>Application for Name Reservation</div>
             </li>
             <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Certificate of Incorporation issued by Ministry</span>
+              <div>Filing of Form for Registration of a Company</div>
             </li>
             <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Gets company’s PAN and TAN</span>
+              <div>Certificate of Incorporation issued by Ministry</div>
+            </li>
+            <li>
+              <div>Gets company’s PAN and TAN</div>
             </li>
           </ul>
         </div>

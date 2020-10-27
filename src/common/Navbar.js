@@ -52,16 +52,16 @@ function Navbar() {
                   <Link to="/private-limited">Private Limited Company</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/">Limited Liability Partnership</Link>
+                  <Link to="/limited-liability">Limited Liability Partnership</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/">One Person Company</Link>
+                  <Link to="/one-person-company">One Person Company</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/">Partnership Firm</Link>
+                  <Link to="/partnership-firm">Partnership Firm</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/">Proprietorship Firm</Link>
+                  <Link to="/proprietorship-firm">Proprietorship Firm</Link>
                 </li>
               </ul>
               <ul className="customnavbar__submenu-list">
