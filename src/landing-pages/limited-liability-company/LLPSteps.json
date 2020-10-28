@@ -1,0 +1,27 @@
+[
+  {
+    "number": 1,
+    "heading": "Digital Signature Certificate (DSC)",
+    "description": "All the proposed designated partners are required to obtain Digital Signatures to sign the documents digitally because all the documents are to be filed online."
+  },
+  {
+    "number": 2,
+    "heading": "Director Identification Number (DIN)",
+    "description": "DIN (Directors Identification Number) is known as DPIN (Designated Partners Identification Number) in case of the Designated Partners of the LLP. So it is the mandatory requirement for becoming the designated partner of the proposed LLP. The application for allotment of DIN has to be made in Form DIR-3 (in case of already existing LLP or Company)"
+  },
+  {
+    "number": 3,
+    "heading": "Reservation of Name",
+    "description": "RUN (Reserve Unique Name) is filed for the reservation of proposed name of LLP which shall be processed by the CRC (Central Registration Centre). The registrar will approve the name only if the name is not undesirable in the opinion of the Central Government and does not resemble any existing partnership firm or an LLP or a body corporate or a trademark. There is a provision that applicant can provide 2 proposed names of the proposed LLP. A re-submission of the form shall be allowed to be made within 15 days for rectifying the defects."
+  },
+  {
+    "number": 4,
+    "heading": "Incorporation of LLP",
+    "description": "<ol style='padding:0 .5rem'><li> The form used for incorporation is FiLLiP (Form for incorporation of Limited Liability Partnership).</li><li> The proposed Designated Partners can also apply for DPIN in this form, if the proposed designated partner does not have a DPIN or DIN.</li><li> The application for reservation of name may be made through FiLLiP too.</li><li> If the name that is applied for is approved, then this approved and reserved name shall be filled as the proposed name of the LLP</li></ol>"
+  },
+  {
+    "number": 5,
+    "heading": "File Limited Liability Partnership Agreement",
+    "description": "<ol style='padding:0 .5rem'> <li> LLP agreement governs the mutual rights and duties amongst the partners and also between the LLP and its partners. </li> <li>LLP agreement must be filed in Form 3 online on MCA Portal.</li> <li> Form 3 for LLP agreement has to be filed within 30 days of the date of its incorporation. </li> <li> The LLP Agreement has to be printed on Stamp Paper. The value of Stamp Paper is differ from state to state. </li></ol>"
+  }
+]

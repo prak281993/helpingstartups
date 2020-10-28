@@ -285,7 +285,7 @@ function PrivateLimitedDetails() {
               summarised as follows:
             </p>
           </span>
-          <Timeline complianceData={complianceData} />
+          <Timeline data={complianceData} />
         </div>
       </section>
 

@@ -1,0 +1,162 @@
+@import "../../sass/variables.scss";
+@import "../../sass/buttons.scss";
+
+.limited-liability {
+  &__allcontents {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5rem;
+    & div h1 {
+      font-size: 3.6rem;
+      font-family: "Josefin Sans", sans-serif;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark, 10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+  &__about {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      & p {
+        font-size: 1.6rem;
+        font-family: "Josefin Sans", sans-serif;
+      }
+    }
+  }
+  &__features {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      font-family: "Josefin Sans", sans-serif;
+      & ul {
+        margin: 0 0 1.5em;
+        list-style: none;
+        counter-reset: step;
+        & li {
+          padding: 2rem;
+          color: $color-white-primary;
+          position: relative;
+          & div {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background-color: rgba($color-green-general, 0.8);
+          }
+          &:before {
+            content: counter(step);
+            text-align: center;
+            counter-increment: step;
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 3rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            background: $color-green-general;
+            overflow: hidden;
+            position: absolute;
+            left: -1.5rem;
+            top: -0.5rem;
+            align-items: flex-end;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+  &__benefits {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      font-family: "Josefin Sans", sans-serif;
+      display: flex;
+      & ul {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        margin: auto;
+        & > li {
+          padding: 0.5rem;
+          list-style-type: none;
+          display: flex;
+          text-align: center;
+          & > span {
+            width: 25rem;
+            padding: 1.5rem;
+            color: $color-white-primary;
+            background-color: rgba($color-green-general, 0.8);
+          }
+        }
+      }
+    }
+  }
+  &__factors {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      font-size: 1.6rem;
+      font-family: "Josefin Sans", sans-serif;
+      display: flex;
+      & ul {
+        margin: auto;
+        list-style: none;
+        display: flex;
+        & > li {
+          padding: 0.5rem;
+          list-style-type: none;
+          display: flex;
+          text-align: center;
+          & > span {
+            width: 25rem;
+            padding: 1rem;
+            color: $color-white-primary;
+            background-color: rgba($color-green-general, 0.8);
+          }
+        }
+      }
+    }
+  }
+  &__steps {
+    margin-top: 3rem;
+    &-content {
+      margin-top: 2rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.6rem;
+    }
+  }
+  &__documents {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+    }
+    &-content-card {
+      font-family: "Josefin Sans", sans-serif;
+      border: 2px solid $color-green-general;
+      & .card-body > h5 {
+        font-size: 1.8rem;
+        color: $color-green-general;
+      }
+      & .card-body,
+      li {
+        font-size: 1.6rem;
+        border: 1px solid $color-green-general;
+      }
+    }
+  }
+  &__timetaken {
+    margin-top: 3rem;
+    &-content {
+      margin-top: 2rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.6rem;
+    }
+  }
+}

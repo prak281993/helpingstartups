@@ -1,11 +1,11 @@
 import React from "react";
 import "./Timeline.scss";
 
-function Timeline({ complianceData }) {
+function Timeline({ data }) {
   return (
     <div className="container">
       <ul className="timeline">
-        {complianceData.map((item) => {
+        {data.map((item) => {
           return (
             <li className="timeline__item">
               <div className="timeline__badge">{item.number}</div>
@@ -14,7 +14,7 @@ function Timeline({ complianceData }) {
                   <h2>{item.heading}</h2>
                 </div>
                 <div className="timeline__panel-content">
-                  <p>{item.description}</p>
+                  <p dangerouslySetInnerHTML={{__html:item.description}}></p>
                 </div>
               </div>
             </li>

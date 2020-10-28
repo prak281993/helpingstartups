@@ -1,0 +1,28 @@
+[
+    {
+      "number": 1,
+      "heading": "1 - 2 Days",
+      "description": "Application for Digital Signature Certificate"
+    },
+    {
+      "number": 2,
+      "heading": "3 - 5 Days",
+      "description": "<ol style='padding:0 .5rem'><li>Checking LLP Name availability</li> <li>Application for Name Reservation under “LLP-RUN”</li> <li>Reservation of LLP Name</li></ol>"
+    },
+    {
+      "number": 3,
+      "heading": "6 - 10 Days",
+      "description": "<ol style='padding:0 .5rem'><li>Drafting the LLP incorporation document</li><li>Filing application for LLP registration</li><li>Application for DIN allotment of Designated Partners</li><li>Certificate of LLP Incorporation</li></ol>"
+    },
+    {
+      "number": 4,
+      "heading": "11 - 14 Days",
+      "description": "<ol  style='padding:0 .5rem'><li>Application for PAN and TAN of LLP</li><li>Drafting of LLP Agreement</li></ol>"
+    },
+    {
+      "number": 5,
+      "heading": "15 - 18 Days",
+      "description": "<ol  style='padding:0 .5rem'><li>Payment of Stamp Duty</li><li>Filing of LLP Agreement</li><li>Government processing time</li></ol>"
+    }
+  ]
+  
