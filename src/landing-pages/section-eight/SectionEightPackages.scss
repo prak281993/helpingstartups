@@ -1,0 +1,26 @@
+@import '../../sass/variables.scss';
+.section-eight {
+  &__packages {
+    background: #fff;
+    &-content-header {
+      & > div {
+        margin-top: 5rem;
+      }
+      & h1 {
+        font-size: 3.6rem;
+        font-family: "Josefin Sans", sans-serif;
+        background-image: linear-gradient(
+          to right bottom,
+          $color-ocean-green,
+          darken($color-ocean-green-dark, 10%)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+    }
+    &-content-main {
+      margin-top: 5rem;
+    }
+  }
+}
