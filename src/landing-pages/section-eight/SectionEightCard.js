@@ -115,7 +115,7 @@ function SectionEightCard() {
                 <i class="fa fa-check"></i>
               </span>
               <span>
-                <p>Hard-copy Share Certificates</p>
+                <p>Hard-copy Share Certificates and MOA & AOA</p>
               </span>
             </li>
             <li>
@@ -276,6 +276,14 @@ function SectionEightCard() {
               </span>
               <span>
                 <p>Incorporation Certificate</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>License under sec. 8</p>
               </span>
             </li>
             <li>
