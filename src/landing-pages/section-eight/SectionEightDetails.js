@@ -1,4 +1,5 @@
 import React from "react";
+import FAQs from "../../components/faq-section/FAQs";
 import Timeline from "../../components/Timeline";
 import Advantages from "./Advantages.json";
 import Compliance from './Compliance.json';
@@ -266,6 +267,14 @@ function SectionEightDetails() {
             </p>
           </span>
           <Timeline data={Compliance} />
+        </div>
+      </section>
+      <section className="section-eight__faqs">
+        <div className="section-eight__faqs-header">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+        <div className="section-eight__faqs-content">
+          <FAQs />
         </div>
       </section>
     </section>

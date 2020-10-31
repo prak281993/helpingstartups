@@ -1,6 +1,6 @@
 import React from "react";
 import Timeline from "../../components/Timeline";
-import FAQs from "./faq-section/FAQs";
+import FAQs from "../../components/faq-section/FAQs";
 import complianceData from "./Compliance.json";
 
 function PrivateLimitedDetails() {

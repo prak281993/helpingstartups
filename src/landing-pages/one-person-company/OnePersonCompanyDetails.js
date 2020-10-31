@@ -1,4 +1,5 @@
 import React from "react";
+import FAQs from "../../components/faq-section/FAQs";
 
 function OnePersonCompanyDetails() {
   return (
@@ -306,6 +307,14 @@ function OnePersonCompanyDetails() {
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="one-person__faqs">
+        <div className="one-person__faqs-header">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+        <div className="one-person__faqs-content">
+          <FAQs />
         </div>
       </section>
     </section>

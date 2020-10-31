@@ -1,4 +1,5 @@
 import React from "react";
+import FAQs from "../../components/faq-section/FAQs";
 import Timeline from "../../components/Timeline";
 import llpStepsData from "./LLPSteps.json";
 import TimeTaken from "./TimeTaken.json";
@@ -200,6 +201,14 @@ function LimitedLiabilityDetails() {
         </div>
         <div className="limited-liability__timetaken-content">
           <Timeline data={TimeTaken} />
+        </div>
+      </section>
+      <section className="limited-liability__faqs">
+        <div className="limited-liability__faqs-header">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+        <div className="limited-liability__faqs-content">
+          <FAQs />
         </div>
       </section>
     </section>
