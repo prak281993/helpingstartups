@@ -1,8 +1,15 @@
 import React from "react";
 import QueryForm from "./QueryForm";
 import "./LandingPagesHeader.scss";
+import Toast from "../components/Toast";
+import { useState } from "react";
 
 function LandingPagesHeader({ companyType }) {
+  const [displayToast, setDisplayToast] = useState(false);
+  const handleToast = (isOpen) => {
+    setDisplayToast(isOpen);
+    setTimeout(() => setDisplayToast(false), 3000);
+  };
   return (
     <header className="landing-page">
       <div className="landing-page__customer-query">
@@ -62,9 +69,13 @@ function LandingPagesHeader({ companyType }) {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <QueryForm />
+            <QueryForm handleToast={handleToast} />
           </div>
         </section>
+
+        {displayToast ? (
+          <Toast message={"Your query has been submitted"} />
+        ) : null}
       </div>
     </header>
   );

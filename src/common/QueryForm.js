@@ -1,14 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import Toast from "../components/Toast";
 
-function QueryForm() {
+function QueryForm({ handleToast }) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
   const [queryMessage, setQueryMessage] = useState("");
-  const mailApi =
-    "https://us-central1-helping-startups.cloudfunctions.net/emailSender";
+  // const mailApi =
+  //   "https://us-central1-helping-startups.cloudfunctions.net/emailSender";
+  const mailApi = "https://helpingstartups.herokuapp.com/api/send-email";
   const sendMail = async (e) => {
     e.preventDefault();
     try {
@@ -20,8 +22,10 @@ function QueryForm() {
         subject: "Query Mail",
       });
       console.log(response);
-    }
-    catch(err){
+      if (response) {
+        handleToast(true);
+      }
+    } catch (err) {
       console.log(err);
     }
   };
@@ -59,7 +63,7 @@ function QueryForm() {
       <button
         class="btn btn-primary landing-page-query__form-button"
         type="button"
-        onClick={sendMail} 
+        onClick={sendMail}
       >
         Submit
       </button>
