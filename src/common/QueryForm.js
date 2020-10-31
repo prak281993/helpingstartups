@@ -23,6 +23,10 @@ function QueryForm({ handleToast }) {
       });
       console.log(response);
       if (response) {
+        setFullname("");
+        setEmail("");
+        setContactNumber("");
+        setQueryMessage("");
         handleToast(true);
       }
     } catch (err) {
