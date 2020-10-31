@@ -1,78 +1,61 @@
 import React from "react";
 import Timeline from "../../components/Timeline";
-import FAQs from "./faq-section/FAQs";
-import complianceData from "./Compliance.json";
+import Advantages from "./Advantages.json";
+import Compliance from './Compliance.json';
 
-function PrivateLimitedDetails() {
+function SectionEightDetails() {
   return (
-    <section class="private-limited__allcontents">
-      <section class="private-limited__about">
-        <div class="private-limited__about-header">
-          <h1>WHAT IS A PRIVATE LIMITED COMPANY</h1>
+    <section className="section-eight__allcontents">
+      <section className="section-eight__about">
+        <div className="section-eight__about-header">
+          <h1>SECTION 8 COMPANY</h1>
         </div>
-        <div class="private-limited__about-content">
+        <div className="section-eight__about-content">
           <p>
-            A private company is a privately owned/ close knitted organisation
-            incorporated under the companies Act, 2013 and governs by the
-            Ministry of Corporate Affairs. It clearly defines and limits the
-            ownership of the shareholders by the share capital owned. It can be
-            incorporated with a minimum of 2(two) directors and 2(two)
-            shareholders. Directors and Shareholders both may or may not be the
-            same person but directors can be individuals only and shareholders
-            can be individuals or corporates.
+            When a company gets registered as a Non- Profit Organization under
+            the Companies Act, 2013 are referred as Section 8 companies. The
+            incorporation, management and compliance of a Section 8 Company is
+            regulated under the Companies Act, 2013 only, which makes it more
+            reliable, credible, accountable than NGO’s, trusts and societies.
+          </p>
+          <p>
+            Object of a Non-profit Company/ Section 8 Company is:
+            <ul>
+              <li>
+                The promotion of commerce, art, science, sports, education,
+                research, social welfare, religion, charity, protection of
+                environment or any such other object;
+              </li>
+              <li>
+                Company should have clear vision and outline plan for the next
+                three years;
+              </li>
+              <li>
+                Infusion of its surplus/ profits, income or any gains in
+                promoting its objects;
+              </li>
+              <li>No dividend payments to its shareholders/ subscribers.</li>
+            </ul>
           </p>
         </div>
       </section>
-      <section class="private-limited__features">
-        <div class="private-limited__features-header">
-          <h1>FEATURES OF A PRIVATE LIMITED COMPANY</h1>
+      <section className="section-eight__advantages">
+        <div className="section-eight__advantages-header">
+          <h1>ADVANTAGES OF SECTION 8 COMPANY:</h1>
         </div>
-        <div class="private-limited__features-content">
-          <ul>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Liability is Limited in nature</span>
-            </li>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Company is a seperate legal entity</span>
-            </li>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Perpetual Succession(of ongoing nature)</span>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Accepts Foreign Direct Investment(100%)</span>
-            </li>
-            <li>
-              <span>
-                <i className="fa fa-check"></i>
-              </span>
-              <span>Company is privately controlled</span>
-            </li>
-          </ul>
+        <div className="section-eight__advantages-content">
+          <Timeline data={Advantages} />
         </div>
       </section>
-      <section class="private-limited__requirements">
-        <div class="private-limited__requirements-header">
+      <section class="section-eight__requirements">
+        <div class="section-eight__requirements-header">
           <h1>BASIC REQUIREMENTS</h1>
         </div>
-        <div class="private-limited__requirements-content">
+        <div class="section-eight__requirements-content">
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">FOR A DIRECTOR</h5>
                   </div>
@@ -91,7 +74,7 @@ function PrivateLimitedDetails() {
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">FOR A SUBSCRIBER</h5>
                   </div>
@@ -107,7 +90,7 @@ function PrivateLimitedDetails() {
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">FOR A REGISTERED OFFICE</h5>
                   </div>
@@ -129,12 +112,11 @@ function PrivateLimitedDetails() {
           </div>
         </div>
       </section>
-
-      <section class="private-limited__procedure">
-        <div class="private-limited__procedure-header">
+      <section class="section-eight__procedure">
+        <div class="section-eight__procedure-header">
           <h1>PROCEDURE FOR ITS INCORPORATION</h1>
         </div>
-        <div class="private-limited__procedure-content">
+        <div class="section-eight__procedure-content">
           <ul>
             <li>
               <div>Apply for Digital Signatures</div>
@@ -157,16 +139,15 @@ function PrivateLimitedDetails() {
           </ul>
         </div>
       </section>
-
-      <section className="private-limited__documents">
-        <div className="private-limited__documents-header">
+      <section className="section-eight__documents">
+        <div className="section-eight__documents-header">
           <h1>DOCUMENTS FOR INCORPORATION</h1>
         </div>
-        <div className="private-limited__documents-content">
+        <div className="section-eight__documents-content">
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">FOR DIRECTORS AND SUBSCRIBER</h5>
                   </div>
@@ -198,7 +179,7 @@ function PrivateLimitedDetails() {
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">FOR REGISTERED OFFICE</h5>
                   </div>
@@ -218,7 +199,7 @@ function PrivateLimitedDetails() {
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
+                <div class="section-eight__requirements-content-card card">
                   <div class="card-body">
                     <h5 class="card-title">ADDITIONAL INFORMATION REQUIRED</h5>
                   </div>
@@ -262,12 +243,11 @@ function PrivateLimitedDetails() {
           </div>
         </div>
       </section>
-
-      <section className="private-limited__compliance">
-        <div className="private-limited__compliance-header">
+      <section className="section-eight__compliance">
+        <div className="section-eight__compliance-header">
           <h1>COMPLIANCE</h1>
         </div>
-        <div className="private-limited__compliance-content">
+        <div className="section-eight__compliance-content">
           <span className="private-limited__compliance-content-about">
             <p>
               As there is a saying precaution is better than cure same applies
@@ -285,20 +265,11 @@ function PrivateLimitedDetails() {
               summarised as follows:
             </p>
           </span>
-          <Timeline data={complianceData} />
-        </div>
-      </section>
-
-      <section className="private-limited__faqs">
-        <div className="private-limited__faqs-header">
-          <h1>FREQUENTLY ASKED QUESTIONS</h1>
-        </div>
-        <div className="private-limited__faqs-content">
-          <FAQs />
+          <Timeline data={Compliance} />
         </div>
       </section>
     </section>
   );
 }
 
-export default PrivateLimitedDetails;
+export default SectionEightDetails;
