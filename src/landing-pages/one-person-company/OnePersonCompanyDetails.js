@@ -310,6 +310,9 @@ function OnePersonCompanyDetails() {
           </ul>
         </div>
       </section>
+
+      <CompanyDifferences />
+
       <section className="one-person__faqs">
         <div className="one-person__faqs-header">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
@@ -318,7 +321,6 @@ function OnePersonCompanyDetails() {
           <FAQs />
         </div>
       </section>
-      <CompanyDifferences />
     </section>
   );
 }

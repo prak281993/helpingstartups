@@ -204,6 +204,9 @@ function LimitedLiabilityDetails() {
           <Timeline data={TimeTaken} />
         </div>
       </section>
+
+      <CompanyDifferences />
+      
       <section className="limited-liability__faqs">
         <div className="limited-liability__faqs-header">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
@@ -212,7 +215,6 @@ function LimitedLiabilityDetails() {
           <FAQs />
         </div>
       </section>
-      <CompanyDifferences />
     </section>
   );
 }

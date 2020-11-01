@@ -290,6 +290,15 @@ function PrivateLimitedDetails() {
         </div>
       </section>
       <CompanyDifferences />
+
+      <section className="private-limited__faqs">
+        <div className="private-limited__faqs-header">
+          <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        </div>
+        <div className="private-limited__faqs-content">
+          <FAQs />
+        </div>
+      </section>
     </section>
   );
 }

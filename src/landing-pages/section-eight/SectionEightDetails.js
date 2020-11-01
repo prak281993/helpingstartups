@@ -270,6 +270,9 @@ function SectionEightDetails() {
           <Timeline data={Compliance} />
         </div>
       </section>
+      
+      <CompanyDifferences />
+
       <section className="section-eight__faqs">
         <div className="section-eight__faqs-header">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
@@ -278,7 +281,6 @@ function SectionEightDetails() {
           <FAQs />
         </div>
       </section>
-      <CompanyDifferences />
     </section>
   );
 }
