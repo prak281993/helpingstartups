@@ -1,4 +1,5 @@
 import React from "react";
+import CompanyDifferences from "../../common/CompanyDifferences";
 import FAQs from "../../components/faq-section/FAQs";
 import Timeline from "../../components/Timeline";
 import llpStepsData from "./LLPSteps.json";
@@ -211,6 +212,7 @@ function LimitedLiabilityDetails() {
           <FAQs />
         </div>
       </section>
+      <CompanyDifferences />
     </section>
   );
 }

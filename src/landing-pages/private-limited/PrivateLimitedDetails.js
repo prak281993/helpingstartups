@@ -2,6 +2,7 @@ import React from "react";
 import Timeline from "../../components/Timeline";
 import FAQs from "../../components/faq-section/FAQs";
 import complianceData from "./Compliance.json";
+import CompanyDifferences from "../../common/CompanyDifferences";
 
 function PrivateLimitedDetails() {
   return (
@@ -288,15 +289,7 @@ function PrivateLimitedDetails() {
           <Timeline data={complianceData} />
         </div>
       </section>
-
-      <section className="private-limited__faqs">
-        <div className="private-limited__faqs-header">
-          <h1>FREQUENTLY ASKED QUESTIONS</h1>
-        </div>
-        <div className="private-limited__faqs-content">
-          <FAQs />
-        </div>
-      </section>
+      <CompanyDifferences />
     </section>
   );
 }

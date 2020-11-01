@@ -1,4 +1,5 @@
 import React from "react";
+import CompanyDifferences from "../../common/CompanyDifferences";
 import FAQs from "../../components/faq-section/FAQs";
 
 function OnePersonCompanyDetails() {
@@ -317,6 +318,7 @@ function OnePersonCompanyDetails() {
           <FAQs />
         </div>
       </section>
+      <CompanyDifferences />
     </section>
   );
 }

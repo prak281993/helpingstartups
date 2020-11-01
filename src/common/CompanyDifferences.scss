@@ -1,0 +1,13 @@
+.landing-page__diff {
+  margin-top: 3rem;
+  & table th {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  & table tbody tr td {
+    font-weight: 400;
+  }
+  &-content {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+  }
+}

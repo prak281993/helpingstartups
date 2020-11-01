@@ -1,4 +1,5 @@
 import React from "react";
+import CompanyDifferences from "../../common/CompanyDifferences";
 import FAQs from "../../components/faq-section/FAQs";
 import Timeline from "../../components/Timeline";
 import Advantages from "./Advantages.json";
@@ -277,6 +278,7 @@ function SectionEightDetails() {
           <FAQs />
         </div>
       </section>
+      <CompanyDifferences />
     </section>
   );
 }
