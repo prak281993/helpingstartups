@@ -7,7 +7,7 @@ function LimitedLiabilityCompany() {
   return (
     <div>
       <BackgroundImage imageUrl={"/assets/limited-liability-company-bg.png"} />
-      <LandingPagesHeader companyType={"Limited Liability Company"} />
+      <LandingPagesHeader startingPrice='5,999' companyType={"Limited Liability Company"} />
       <LimitedLiabilityContent />
     </div>
   );

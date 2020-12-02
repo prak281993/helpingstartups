@@ -7,7 +7,7 @@ function PrivateLimited() {
     return (
         <div>
             <BackgroundImage imageUrl ={'/assets/private-limited-bg.jpg'} />
-            <LandingPagesHeader companyType={'Private Limited Company'} />
+            <LandingPagesHeader startingPrice='5,499' companyType={'Private Limited Company'} />
             <PrivateLimitedContent />
         </div>
     )

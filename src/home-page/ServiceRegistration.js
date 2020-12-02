@@ -15,7 +15,7 @@ function ServiceRegistration() {
         "Share Certificates",
         "PAN & TAN",
       ],
-      price: 14999,
+      price: 6499,
       url:'/private-limited'
     },
     {
@@ -29,7 +29,7 @@ function ServiceRegistration() {
         "Share Certificates",
         "PAN & TAN",
       ],
-      price: 7999,
+      price: 5999,
       url:'/limited-liability'
     },
     {
@@ -43,7 +43,7 @@ function ServiceRegistration() {
         "Share Certificates",
         "PAN & TAN",
       ],
-      price: 17999,
+      price: 5999,
       url:'/one-person-company'
     },
     {
@@ -57,7 +57,7 @@ function ServiceRegistration() {
           "Share Certificates",
           "1 DSC PAN & TAN",
         ],
-        price: 24999,
+        price: 9999,
         url:'/section-eight-company'
       },
   ];

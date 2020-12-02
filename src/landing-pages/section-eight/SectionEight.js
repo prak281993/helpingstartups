@@ -7,7 +7,7 @@ function SectionEight() {
   return (
     <div>
       <BackgroundImage imageUrl={"/assets/section-eight-company.jpg"} />
-      <LandingPagesHeader companyType={"Section 8 Company"} />
+      <LandingPagesHeader startingPrice='9,999' companyType={"Section 8 Company"} />
       <SectionEightContent />
     </div>
   );

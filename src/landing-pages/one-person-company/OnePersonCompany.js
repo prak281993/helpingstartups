@@ -7,7 +7,7 @@ function OnePersonCompany() {
     return (
         <div>
             <BackgroundImage imageUrl={'/assets/one-person-company-bg.jpg'} />
-            <LandingPagesHeader companyType={'One Person Company'} />
+            <LandingPagesHeader startingPrice='5,999' companyType={'One Person Company'} />
             <OnePersonCompanyContent />
         </div>
     )

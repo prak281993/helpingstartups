@@ -4,7 +4,7 @@ import "./LandingPagesHeader.scss";
 import Toast from "../components/Toast";
 import { useState } from "react";
 
-function LandingPagesHeader({ companyType }) {
+function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
   const [displayToast, setDisplayToast] = useState(false);
   const handleToast = (isOpen) => {
     setDisplayToast(isOpen);
@@ -34,7 +34,7 @@ function LandingPagesHeader({ companyType }) {
                   <img src="assets/svg/rupee.svg" alt="" />
                 </span>
                 <span className="advantages__item-text">
-                  <p>Starting @ Rs 4,999</p>
+                  <p>Starting @ Rs {startingPrice}</p>
                 </span>
               </li>
               <li className="advantages__item">

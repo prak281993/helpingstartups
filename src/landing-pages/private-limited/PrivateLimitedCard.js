@@ -11,7 +11,7 @@ function PrivateLimitedCard() {
           </div>
           <div class="price-value">
             <span class="currency">&#8377;</span>
-            <span class="amount">4999</span>
+            <span class="amount">5499</span>
           </div>
           <ul class="pricing-content">
             <li>
@@ -95,24 +95,56 @@ function PrivateLimitedCard() {
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Incorporation Kit</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Hard-copy Share Certificates</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
+              </span>
+              <span>
+                <p>Bank Account Opening Support</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
+              </span>
+              <span>
+                <p>1st Board Meeting</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
+              </span>
+              <span>
+                <p>1st Statutory Appointment</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
+              </span>
+              <span>
+                <p>Board Resolution and Notices</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Commencement of Business Form Filing</p>
@@ -147,7 +179,7 @@ function PrivateLimitedCard() {
                 <i class="fa fa-close"></i>
               </span>
               <span>
-                <p>Board Resolution Preparation</p>
+                <p>Annual Minutes of Meeting</p>
               </span>
             </li>
             <li>
@@ -171,7 +203,7 @@ function PrivateLimitedCard() {
                 <i class="fa fa-close"></i>
               </span>
               <span>
-                <p>6 Months GST Return Filing</p>
+                <p>3 Months GST Return Filing</p>
               </span>
             </li>
             <li>
@@ -180,14 +212,6 @@ function PrivateLimitedCard() {
               </span>
               <span>
                 <p>MSME Registration Under Udhyam Portal</p>
-              </span>
-            </li>
-            <li>
-              <span class="pricing-content__available-icon--close">
-                <i class="fa fa-close"></i>
-              </span>
-              <span>
-                <p>Trademark Filing</p>
               </span>
             </li>
           </ul>
@@ -203,7 +227,7 @@ function PrivateLimitedCard() {
           </div>
           <div class="price-value">
             <span class="currency">&#8377;</span>
-            <span class="amount">10000</span>
+            <span class="amount">10999</span>
           </div>
           <ul class="pricing-content">
             <li>
@@ -307,52 +331,84 @@ function PrivateLimitedCard() {
                 <i class="fa fa-check"></i>
               </span>
               <span>
-                <p>Commencement of Business Form Filing</p>
+                <p>Bank Account Opening Support</p>
               </span>
             </li>
             <li>
               <span class="pricing-content__available-icon--check">
                 <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>1st Board Meeting</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>1st Statutory Appointment</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>Board Resolution and Notices</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>Commencement of Business Form Filing</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Financial Statement Preparation</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Annual Report</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>Director's Report</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
-                <p>Board Resolution Preparation</p>
+                <p>Annual Minutes of Meeting</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>MCA Annual Return Filing</p>
               </span>
             </li>
             <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
+              <span class="pricing-content__available-icon--close">
+                <i class="fa fa-close"></i>
               </span>
               <span>
                 <p>1 Year Dedicated Compliance Manager Support</p>
@@ -363,7 +419,7 @@ function PrivateLimitedCard() {
                 <i class="fa fa-close"></i>
               </span>
               <span>
-                <p>6 Months GST Return Filing</p>
+                <p>3 Months GST Return Filing</p>
               </span>
             </li>
             <li>
@@ -372,14 +428,6 @@ function PrivateLimitedCard() {
               </span>
               <span>
                 <p>MSME Registration Under Udhyam Portal</p>
-              </span>
-            </li>
-            <li>
-              <span class="pricing-content__available-icon--close">
-                <i class="fa fa-close"></i>
-              </span>
-              <span>
-                <p>Trademark Filing</p>
               </span>
             </li>
           </ul>
@@ -499,6 +547,38 @@ function PrivateLimitedCard() {
                 <i class="fa fa-check"></i>
               </span>
               <span>
+                <p>Bank Account Opening Support</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>1st Board Meeting</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>1st Statutory Appointment</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
+                <p>Board Resolution and Notices</p>
+              </span>
+            </li>
+            <li>
+              <span class="pricing-content__available-icon--check">
+                <i class="fa fa-check"></i>
+              </span>
+              <span>
                 <p>Commencement of Business Form Filing</p>
               </span>
             </li>
@@ -531,7 +611,7 @@ function PrivateLimitedCard() {
                 <i class="fa fa-check"></i>
               </span>
               <span>
-                <p>Board Resolution Preparation</p>
+                <p>Annual Minutes of Meeting</p>
               </span>
             </li>
             <li>
@@ -555,7 +635,7 @@ function PrivateLimitedCard() {
                 <i class="fa fa-check"></i>
               </span>
               <span>
-                <p>6 Months GST Return Filing</p>
+                <p>3 Months GST Return Filing</p>
               </span>
             </li>
             <li>
@@ -564,14 +644,6 @@ function PrivateLimitedCard() {
               </span>
               <span>
                 <p>MSME Registration Under Udhyam Portal</p>
-              </span>
-            </li>
-            <li>
-              <span class="pricing-content__available-icon--check">
-                <i class="fa fa-check"></i>
-              </span>
-              <span>
-                <p>Trademark Filing</p>
               </span>
             </li>
           </ul>
