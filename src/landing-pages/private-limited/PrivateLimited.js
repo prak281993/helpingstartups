@@ -1,16 +1,24 @@
-import React from 'react';
-import LandingPagesHeader from '../../common/LandingPagesHeader';
-import BackgroundImage from '../../components/BackgroundImage'
-import PrivateLimitedContent from './PrivateLimitedContent';
+import React, { useContext } from "react";
+import { UserContext } from "../../App";
+import FeedbackAndServices from "../../common/FeedbackAndServices";
+import LandingPagesHeader from "../../common/LandingPagesHeader";
+import BackgroundImage from "../../components/BackgroundImage";
+import PrivateLimitedContent from "./PrivateLimitedContent";
 
 function PrivateLimited() {
-    return (
-        <div>
-            <BackgroundImage imageUrl ={'/assets/private-limited-bg.jpg'} />
-            <LandingPagesHeader startingPrice='5,499' companyType={'Private Limited Company'} />
-            <PrivateLimitedContent />
-        </div>
-    )
+  const user = useContext(UserContext);
+  console.log(user)
+  return (
+    <div>
+      <BackgroundImage imageUrl={"/assets/private-limited-bg.jpg"} />
+      <LandingPagesHeader
+        startingPrice="5,499"
+        companyType={"Private Limited Company"}
+      />
+      <PrivateLimitedContent />
+      <FeedbackAndServices />
+    </div>
+  );
 }
 
-export default PrivateLimited
+export default PrivateLimited;

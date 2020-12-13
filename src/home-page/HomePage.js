@@ -6,6 +6,7 @@ import HomePageContent from './HomePageContent';
 import TrademarkServices from "./TrademarkServices";
 import CompanyBenefits from "./CompanyBenefits";
 import PictureDescription from "./PictureDescription";
+import FeedbackAndServices from "../common/FeedbackAndServices";
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <TrademarkServices />
       <CompanyBenefits />
       <PictureDescription />
+      <FeedbackAndServices />
     </div>
   );
 }

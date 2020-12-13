@@ -1,0 +1,38 @@
+{
+    "paths": [
+        {
+            "name": "/hs",
+            "lambdaFunction": "hs",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST"
+                ]
+            },
+            "policyResourceName": "/hs"
+        }
+    ],
+    "resourceName": "helpingstartups",
+    "apiName": "helpingstartups",
+    "functionArns": [
+        {
+            "lambdaFunction": "hs"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-helpingstartups-dev-202712-authRole",
+        "unAuthRoleName": "amplify-helpingstartups-dev-202712-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "hs",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

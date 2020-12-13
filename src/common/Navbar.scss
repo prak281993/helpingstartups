@@ -20,6 +20,9 @@
       & > h4 {
         margin-left: 2rem;
         font-size: 3rem;
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
   
@@ -41,6 +44,7 @@
       width: 100%;
       text-align: center;
       padding: 2rem;
+      margin: auto;
       cursor: pointer;
       transition: all 0.3s ease-in;
       &:hover {

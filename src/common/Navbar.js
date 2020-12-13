@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { UserContext } from "../App";
+import { AmplifySignOut } from "@aws-amplify/ui-react";
+import { Auth } from "aws-amplify";
+import UserProfile from "./UserProfile";
 
 function Navbar() {
+  const user = useContext(UserContext);
+  const history = useHistory();
   const toggleMenu = () => {
     const menuLines = document.querySelector(".customnavbar__menu-lines");
     menuLines.addEventListener("click", function () {
@@ -30,7 +36,7 @@ function Navbar() {
   return (
     <div className="customnavbar">
       <div className="customnavbar__logo-container">
-        <h4>HelpingStartups</h4>
+        <h4 onClick={() => history.replace("/")}>HelpingStartups</h4>
       </div>
       <div className="customnavbar__nav">
         <ul className="customnavbar__list">
@@ -40,9 +46,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="customnavbar__item customnavbar__list--item2">
-            <a className="customnavbar__link">
-              Services
-            </a>
+            <a className="customnavbar__link">Services</a>
             <ul className="customnavbar__submenu">
               <ul className="customnavbar__submenu-list">
                 <h4 className="customnavbar__submenu-list-header">
@@ -52,7 +56,9 @@ function Navbar() {
                   <Link to="/private-limited">Private Limited Company</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/limited-liability">Limited Liability Partnership</Link>
+                  <Link to="/limited-liability">
+                    Limited Liability Partnership
+                  </Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
                   <Link to="/one-person-company">One Person Company</Link>
@@ -132,9 +138,15 @@ function Navbar() {
             </Link>
           </li>
           <li className="customnavbar__item customnavbar__list--item4">
-            <Link to="/" className="customnavbar__link">
-              Sign in
-            </Link>
+            {!user ? (
+              <Link to="/signin" className="customnavbar__link">
+                Sign in
+              </Link>
+            ) : (
+              <Link className="customnavbar__link">
+                <UserProfile />
+              </Link>
+            )}
           </li>
         </ul>
       </div>
