@@ -7,12 +7,16 @@ import OnePersonCompany from "./landing-pages/one-person-company/OnePersonCompan
 import LimitedLiabilityCompany from "./landing-pages/limited-liability-company/LimitedLiabilityCompany";
 import SectionEight from "./landing-pages/section-eight/SectionEight";
 import ScrollToTop from "./ScrollToTop";
-import { AmplifyAuthenticator, AmplifySignIn } from "@aws-amplify/ui-react";
+import {
+  AmplifyAuthenticator,
+  AmplifySignIn,
+  AmplifySignUp,
+} from "@aws-amplify/ui-react";
 import { onAuthUIStateChange } from "@aws-amplify/ui-components";
 import "./App.css";
 import { Auth } from "aws-amplify";
 import Checkout from "./common/Checkout";
-import BackgroundVideo from './components/BackgroundVideo';
+import BackgroundVideo from "./components/BackgroundVideo";
 
 export const UserContext = createContext(null);
 
@@ -69,7 +73,31 @@ function App() {
               <Route exact path="/signin">
                 {!authData ? (
                   <AmplifyAuthenticator>
-                    <AmplifySignIn handleSubmit={handleClick} />
+                    <AmplifySignUp
+                     slot="sign-up"
+                     usernameAlias="email"
+                      formFields={[
+                        {
+                          type: "email",
+                          label: "Email",
+                          placeholder: "Email",
+                          required: true,
+                        },
+                        {
+                          type: "password",
+                          label: "Password",
+                          placeholder: "Password",
+                          required: true,
+                        },
+                        {
+                          type: "phone_number",
+                          label: "Phone Number",
+                          placeholder: "9999999999",
+                          required: false,
+                        },
+                      ]}
+                      handleSubmit={handleClick}
+                    />
                   </AmplifyAuthenticator>
                 ) : (
                   <HomePage />
