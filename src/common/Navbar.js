@@ -139,7 +139,7 @@ function Navbar() {
           </li>
           <li className="customnavbar__item customnavbar__list--item4">
             {!user ? (
-              <Link to="/signin" className="customnavbar__link">
+              <Link onClick={()=>Auth.federatedSignIn()} className="customnavbar__link">
                 Sign in
               </Link>
             ) : (

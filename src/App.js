@@ -9,7 +9,6 @@ import SectionEight from "./landing-pages/section-eight/SectionEight";
 import ScrollToTop from "./ScrollToTop";
 import {
   AmplifyAuthenticator,
-  AmplifySignIn,
   AmplifySignUp,
 } from "@aws-amplify/ui-react";
 import { onAuthUIStateChange } from "@aws-amplify/ui-components";
@@ -31,6 +30,7 @@ function App() {
 
   useEffect(async () => {
     const session = await Auth.currentAuthenticatedUser();
+    console.log(session)
     if (session) {
       setAuthData(session);
       const user = {

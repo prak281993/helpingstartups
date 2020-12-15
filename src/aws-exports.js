@@ -7,7 +7,20 @@ const awsmobile = {
     "aws_cognito_region": "ap-south-1",
     "aws_user_pools_id": "ap-south-1_j18ORb03V",
     "aws_user_pools_web_client_id": "70dovbm5sosp9nok6slgeqi3dl",
-    "oauth": {},
+    "oauth": {
+        "domain": "helpingstartups8ad54258-8ad54258-dev.auth.ap-south-1.amazoncognito.com",
+        "scope": [
+            "phone",
+            "email",
+            "openid",
+            "profile",
+            "aws.cognito.signin.user.admin"
+        ],
+        "redirectSignIn": "https://helpingstartups.netlify.app/",
+        "redirectSignOut": "https://helpingstartups.netlify.app/",
+        "responseType": "code"
+    },
+    "federationTarget": "COGNITO_USER_POOLS",
     "aws_cloud_logic_custom": [
         {
             "name": "helpingstartups",
