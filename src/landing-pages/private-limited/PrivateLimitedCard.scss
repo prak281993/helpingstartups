@@ -194,6 +194,9 @@
     border: 2px solid transparent;
     display: block;
     transition: all 0.3s ease 0s;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .pricingTable .pricingTable-signup a:hover {
     color: #fe5f85;

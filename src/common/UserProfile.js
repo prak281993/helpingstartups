@@ -6,7 +6,7 @@ function UserProfile() {
   const history = useHistory();
   const handleLogOut = () => {
     Auth.signOut();
-    history.push("/signin");
+    history.push("/");
   };
   return (
     <div className="dropdown">

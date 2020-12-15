@@ -1,7 +1,6 @@
+import { API } from "aws-amplify";
 import React from "react";
 import { useState } from "react";
-import axios from "axios";
-import Toast from "../components/Toast";
 
 function QueryForm({ handleToast }) {
   const [fullname, setFullname] = useState("");
@@ -10,16 +9,18 @@ function QueryForm({ handleToast }) {
   const [queryMessage, setQueryMessage] = useState("");
   // const mailApi =
   //   "https://us-central1-helping-startups.cloudfunctions.net/emailSender";
-  const mailApi = "https://helpingstartups.herokuapp.com/api/send-email";
+  const mailApi = "/hs/send-email";
   const sendMail = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(mailApi, {
-        fullname,
-        sender: email,
-        contactNumber,
-        queryMessage,
-        subject: "Query Mail",
+      const response = await API.post("helpingstartups", mailApi, {
+        body: {
+          fullname: fullname,
+          sender: email,
+          contactNumber: contactNumber,
+          queryMessage: queryMessage,
+          subject: "Query Mail",
+        },
       });
       console.log(response);
       if (response) {
@@ -30,7 +31,7 @@ function QueryForm({ handleToast }) {
         handleToast(true);
       }
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   };
   return (

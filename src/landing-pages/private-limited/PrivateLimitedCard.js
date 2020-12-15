@@ -1,7 +1,18 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./PrivateLimitedCard.scss";
 
 function PrivateLimitedCard() {
+  const history = useHistory();
+  const checkOut = (price, plan) => {
+    const purchaseData = {
+      price,
+      plan,
+      service: "private-limited",
+    };
+    localStorage.setItem("purchaseData", JSON.stringify(purchaseData));
+    history.push("/checkout");
+  };
   return (
     <>
       <div class="col-md-4 col-sm-6">
@@ -216,7 +227,7 @@ function PrivateLimitedCard() {
             </li>
           </ul>
           <div class="pricingTable-signup">
-            <a href="#">Buy Now</a>
+            <a onClick={() => checkOut(5499, "Basic")}>Buy Now</a>
           </div>
         </div>
       </div>
@@ -432,7 +443,7 @@ function PrivateLimitedCard() {
             </li>
           </ul>
           <div class="pricingTable-signup">
-            <a href="#">Buy Now</a>
+            <a onClick={() => checkOut(10999, "Standard")}>Buy Now</a>
           </div>
         </div>
       </div>
@@ -648,7 +659,7 @@ function PrivateLimitedCard() {
             </li>
           </ul>
           <div class="pricingTable-signup">
-            <a href="#">Buy Now</a>
+            <a onClick={() => checkOut(15999, "Advanced")}>Buy Now</a>
           </div>
         </div>
       </div>

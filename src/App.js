@@ -1,7 +1,6 @@
 import React, { useEffect, useState, createContext } from "react";
 import HomePage from "./home-page/HomePage";
 import Navbar from "./common/Navbar";
-import FeedbackAndServices from "./common/FeedbackAndServices";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PrivateLimited from "./landing-pages/private-limited/PrivateLimited";
 import OnePersonCompany from "./landing-pages/one-person-company/OnePersonCompany";
@@ -12,6 +11,8 @@ import { AmplifyAuthenticator, AmplifySignIn } from "@aws-amplify/ui-react";
 import { onAuthUIStateChange } from "@aws-amplify/ui-components";
 import "./App.css";
 import { Auth } from "aws-amplify";
+import Checkout from "./common/Checkout";
+import BackgroundVideo from './components/BackgroundVideo';
 
 export const UserContext = createContext(null);
 
@@ -53,6 +54,7 @@ function App() {
       <Router>
         <UserContext.Provider value={user}>
           <Navbar />
+          <BackgroundVideo />
           <ScrollToTop>
             <Switch>
               <Route path="/private-limited">
@@ -73,6 +75,7 @@ function App() {
                   <HomePage />
                 )}
               </Route>
+              <Route path="/checkout" component={Checkout} />
               <Route exact path="/" component={HomePage} />
             </Switch>
           </ScrollToTop>
