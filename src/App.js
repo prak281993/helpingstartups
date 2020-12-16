@@ -7,10 +7,7 @@ import OnePersonCompany from "./landing-pages/one-person-company/OnePersonCompan
 import LimitedLiabilityCompany from "./landing-pages/limited-liability-company/LimitedLiabilityCompany";
 import SectionEight from "./landing-pages/section-eight/SectionEight";
 import ScrollToTop from "./ScrollToTop";
-import {
-  AmplifyAuthenticator,
-  AmplifySignUp,
-} from "@aws-amplify/ui-react";
+import { AmplifyAuthenticator, AmplifySignUp } from "@aws-amplify/ui-react";
 import { onAuthUIStateChange } from "@aws-amplify/ui-components";
 import "./App.css";
 import { Auth } from "aws-amplify";
@@ -28,17 +25,19 @@ function App() {
     console.log("signed in");
   };
 
-  useEffect(async () => {
-    const session = await Auth.currentAuthenticatedUser();
-    console.log(session)
-    if (session) {
-      setAuthData(session);
-      const user = {
-        email: session?.attributes.email,
-        phoneNumber: session?.attributes.phone_number,
-      };
-      if (user.email) setUser(user);
-    }
+  useEffect(() => {
+    (async function () {
+      const session = await Auth.currentAuthenticatedUser();
+      console.log(session);
+      if (session) {
+        setAuthData(session);
+        const user = {
+          email: session?.attributes.email,
+          phoneNumber: session?.attributes.phone_number,
+        };
+        if (user.email) setUser(user);
+      }
+    })();
   }, []);
 
   useEffect(() => {
@@ -74,8 +73,8 @@ function App() {
                 {!authData ? (
                   <AmplifyAuthenticator>
                     <AmplifySignUp
-                     slot="sign-up"
-                     usernameAlias="email"
+                      slot="sign-up"
+                      usernameAlias="email"
                       formFields={[
                         {
                           type: "email",
