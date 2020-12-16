@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "helpingstartupsa01a8d7f_identitypool_a01a8d7f",
+    "identityPoolName": "helpingstartupse38c2fe9_identitypool_e38c2fe9",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "helpina01a8d7f",
-    "userPoolName": "helpingstartupsa01a8d7f_userpool_a01a8d7f",
+    "resourceNameTruncated": "helpine38c2fe9",
+    "userPoolName": "helpingstartupse38c2fe9_userpool_e38c2fe9",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "helpina01a8d7f_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "helpine38c2fe9_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "a01a8d7f",
-    "resourceName": "helpingstartupsa01a8d7f",
+    "sharedId": "e38c2fe9",
+    "resourceName": "helpingstartupse38c2fe9",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -47,9 +47,6 @@
     },
     "useDefault": "defaultSocial",
     "hostedUI": true,
-    "usernameAttributes": [
-        "email"
-    ],
     "hostedUIDomainName": "helpingstartups",
     "authProvidersUserPool": [
         "Facebook",

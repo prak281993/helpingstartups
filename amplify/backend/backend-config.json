@@ -1,6 +1,6 @@
 {
   "auth": {
-    "helpingstartupsa01a8d7f": {
+    "helpingstartupse38c2fe9": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
