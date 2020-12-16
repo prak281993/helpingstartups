@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "helpingstartups871bd387_identitypool_871bd387",
+    "identityPoolName": "helpingstartupsa01a8d7f_identitypool_a01a8d7f",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "helpin871bd387",
-    "userPoolName": "helpingstartups871bd387_userpool_871bd387",
+    "resourceNameTruncated": "helpina01a8d7f",
+    "userPoolName": "helpingstartupsa01a8d7f_userpool_a01a8d7f",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "helpin871bd387_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "helpina01a8d7f_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "871bd387",
-    "resourceName": "helpingstartups871bd387",
+    "sharedId": "a01a8d7f",
+    "resourceName": "helpingstartupsa01a8d7f",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,18 +46,18 @@
         ]
     },
     "useDefault": "defaultSocial",
+    "hostedUI": true,
     "usernameAttributes": [
         "email"
     ],
-    "userPoolGroupList": [],
-    "serviceName": "Cognito",
-    "dependsOn": [],
-    "hostedUI": true,
-    "hostedUIDomainName": "helpingstartups8ad54258-8ad54258",
+    "hostedUIDomainName": "helpingstartups",
     "authProvidersUserPool": [
         "Facebook",
         "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://helpingstartups.netlify.app/\"],\"LogoutURLs\":[\"https://helpingstartups.netlify.app/\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://helpingstartups.netlify.com/\"],\"LogoutURLs\":[\"https://helpingstartups.netlify.com/\"]}",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "dependsOn": []
 }

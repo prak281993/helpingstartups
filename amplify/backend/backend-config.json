@@ -1,33 +1,10 @@
 {
   "auth": {
-    "helpingstartups871bd387": {
+    "helpingstartupsa01a8d7f": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
-    }
-  },
-  "function": {
-    "hs": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "api": {
-    "helpingstartups": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "hs",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        }
-      ]
     }
   }
 }
