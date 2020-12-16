@@ -20,7 +20,14 @@ const awsmobile = {
         "redirectSignOut": "https://helpingstartups.netlify.com/",
         "responseType": "code"
     },
-    "federationTarget": "COGNITO_USER_POOLS"
+    "federationTarget": "COGNITO_USER_POOLS",
+    "aws_cloud_logic_custom": [
+        {
+            "name": "helpingstartups",
+            "endpoint": "https://ckzd3icl2c.execute-api.ap-south-1.amazonaws.com/dev",
+            "region": "ap-south-1"
+        }
+    ]
 };
 
 

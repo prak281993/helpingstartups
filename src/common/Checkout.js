@@ -50,7 +50,7 @@ function Checkout() {
     });
     const { id, amount } = resp.order;
     var options = {
-      key: "rzp_test_FY4g68O83WkmLi", // Enter the Key ID generated from the Dashboard
+      key: "rzp_test_7Gwiwk4e4EA3au", // Enter the Key ID generated from the Dashboard
       amount: amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       description: purchaseData.plan,
