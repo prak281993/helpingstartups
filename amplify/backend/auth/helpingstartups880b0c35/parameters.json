@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "helpingstartupse38c2fe9_identitypool_e38c2fe9",
+    "identityPoolName": "helpingstartups880b0c35_identitypool_880b0c35",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "helpine38c2fe9",
-    "userPoolName": "helpingstartupse38c2fe9_userpool_e38c2fe9",
+    "resourceNameTruncated": "helpin880b0c35",
+    "userPoolName": "helpingstartups880b0c35_userpool_880b0c35",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "helpine38c2fe9_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "helpin880b0c35_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "e38c2fe9",
-    "resourceName": "helpingstartupse38c2fe9",
+    "sharedId": "880b0c35",
+    "resourceName": "helpingstartups880b0c35",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -52,6 +52,7 @@
         "Facebook",
         "Google"
     ],
+    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"211056387243696\",\"client_secret\":\"cd4edd26f59062a8f27413f9ca7a6045\"},{\"ProviderName\":\"Google\",\"client_id\":\"382588452484-nlpvoigkahoadp7a9e9hrgd325gn554a.apps.googleusercontent.com\",\"client_secret\":\"7pROTj-LNDqf0pt8aGqQu17M\"}]",
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
     "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://helpingstartups.netlify.com/\"],\"LogoutURLs\":[\"https://helpingstartups.netlify.com/\"]}",
     "userPoolGroupList": [],
