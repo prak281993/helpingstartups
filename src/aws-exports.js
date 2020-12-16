@@ -8,7 +8,7 @@ const awsmobile = {
     "aws_user_pools_id": "ap-south-1_j18ORb03V",
     "aws_user_pools_web_client_id": "70dovbm5sosp9nok6slgeqi3dl",
     "oauth": {
-        "domain": "helpingstartups8ad54258-8ad54258-dev.auth.ap-south-1.amazoncognito.com",
+        "domain": "helpingstartups8ad54258-8ad54258-prod.auth.ap-south-1.amazoncognito.com",
         "scope": [
             "phone",
             "email",
@@ -24,7 +24,7 @@ const awsmobile = {
     "aws_cloud_logic_custom": [
         {
             "name": "helpingstartups",
-            "endpoint": "https://9irfrhwf5m.execute-api.ap-south-1.amazonaws.com/dev",
+            "endpoint": "https://u9hjeiungh.execute-api.ap-south-1.amazonaws.com/prod",
             "region": "ap-south-1"
         }
     ]

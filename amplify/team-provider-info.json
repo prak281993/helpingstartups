@@ -16,5 +16,26 @@
         "helpingstartups871bd387": {}
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-helpingstartups-prod-180828-authRole",
+      "UnauthRoleArn": "arn:aws:iam::610327975656:role/amplify-helpingstartups-prod-180828-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::610327975656:role/amplify-helpingstartups-prod-180828-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-helpingstartups-prod-180828-deployment",
+      "UnauthRoleName": "amplify-helpingstartups-prod-180828-unauthRole",
+      "StackName": "amplify-helpingstartups-prod-180828",
+      "StackId": "arn:aws:cloudformation:ap-south-1:610327975656:stack/amplify-helpingstartups-prod-180828/9ab3af80-3f9b-11eb-be15-029204a93408",
+      "AmplifyAppId": "d3cnrypjifb38g"
+    },
+    "categories": {
+      "auth": {
+        "helpingstartups871bd387": {}
+      },
+      "function": {
+        "hs": {}
+      }
+    }
   }
 }

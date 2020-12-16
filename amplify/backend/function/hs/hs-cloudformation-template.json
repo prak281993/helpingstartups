@@ -68,7 +68,7 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-helpingstartups-dev-202712-deployment",
+          "S3Bucket": "amplify-helpingstartups-prod-180828-deployment",
           "S3Key": "amplify-builds/hs-6676566b484b575a5034-build.zip"
         }
       }
