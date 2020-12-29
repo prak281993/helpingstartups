@@ -125,15 +125,11 @@ Parameters:
   authProvidersUserPool:
     Type: CommaDelimitedList
       
-  hostedUIProviderMeta:
-    Type: String
-  
-            
   hostedUIProviderCreds:
     Type: String
   
             
-  oAuthMetadata:
+  hostedUIProviderMeta:
     Type: String
   
             
@@ -141,7 +137,6 @@ Parameters:
   userPoolGroupList:
     Type: CommaDelimitedList
       
-            
   serviceName:
     Type: String
   
@@ -150,6 +145,11 @@ Parameters:
   dependsOn:
     Type: CommaDelimitedList
       
+  oAuthMetadata:
+    Type: String
+  
+            
+            
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
 

@@ -50,12 +50,12 @@ function Checkout() {
     });
     const { id, amount } = resp.order;
     var options = {
-      key: "rzp_test_7Gwiwk4e4EA3au", // Enter the Key ID generated from the Dashboard
+      key: "rzp_test_7Gwiwk4e4EA3au", 
       amount: amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       description: purchaseData.plan,
       image: "/assets/money.png",
-      order_id: id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      order_id: id,
       handler: function (response) {
         history.push(`/${purchaseData.service}`);
         // alert(response.razorpay_payment_id);
@@ -67,7 +67,7 @@ function Checkout() {
         contact: user.phoneNumber,
       },
       notes: {
-        address: "Razorpay Corporate Office",
+        address: "Corporate Amicus",
       },
       theme: {
         color: "#3399cc",

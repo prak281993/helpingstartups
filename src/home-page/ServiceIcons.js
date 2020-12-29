@@ -3,13 +3,13 @@ import './ServiceIcons.scss';
 
 function ServiceIcons() {
   return (
-    <section class="section section-service-icons">
-      <div class="section__service-icons">
-        <div class="section__service-icons-item" data-aos="fade-right">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--1">
+    <section className="section section-service-icons">
+      <div className="section__service-icons">
+        <div className="section__service-icons-item" data-aos="fade-right">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--1">
               <svg
-                class="section__service-link-p-registration-svg"
+                className="section__service-link-p-registration-svg"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -221,13 +221,13 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">PROPRIETORSHIP REGISTRATION</span>
+          <span className="section__service-text">PROPRIETORSHIP REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-right">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--2">
+        <div className="section__service-icons-item" data-aos="fade-right">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--2">
               <svg
-                class="section__service-link-company-svg"
+                className="section__service-link-company-svg"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -448,9 +448,9 @@ function ServiceIcons() {
                     width="152"
                     height="40"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                       in="SourceAlpha"
                       type="matrix"
@@ -478,13 +478,13 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">COMPANY REGISTRATION</span>
+          <span className="section__service-text">COMPANY REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item" data-aos="flip-left">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--3">
+        <div className="section__service-icons-item" data-aos="flip-left">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--3">
               <svg
-                class="section__service-link-partnership"
+                className="section__service-link-partnership"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -584,15 +584,15 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">
+          <span className="section__service-text">
             LLP/PARTNERSHIP REGISTRATION
           </span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-left">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--9">
+        <div className="section__service-icons-item" data-aos="fade-left">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--9">
               <svg
-                class="section__service-link-msme"
+                className="section__service-link-msme"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -722,13 +722,13 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">MSME REGISTRATION</span>
+          <span className="section__service-text">MSME REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-left">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--7">
+        <div className="section__service-icons-item" data-aos="fade-left">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--7">
               <svg
-                class="section__service-link-trademark"
+                className="section__service-link-trademark"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -781,28 +781,28 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">TRADEMARK SERVICES</span>
+          <span className="section__service-text">TRADEMARK SERVICES</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-right">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--6">
+        <div className="section__service-icons-item" data-aos="fade-right">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--6">
               <img src="/assets//icon-images/tax.svg" alt="" />
             </a>
           </span>
-          <span class="section__service-text">GST RETURN</span>
+          <span className="section__service-text">GST RETURN</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-right">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--4">
+        <div className="section__service-icons-item" data-aos="fade-right">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--4">
               <svg
-                class="section__service-link-cutlery"
+                className="section__service-link-cutlery"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="cutlery 1" clip-path="url(#clip0)">
+                <g id="cutlery 1" clipPath="url(#clip0)">
                   <g id="Page 1">
                     <g id="020   Cutlery and Plates">
                       <path
@@ -862,13 +862,13 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">FSSAI FOOD LICENCE</span>
+          <span className="section__service-text">FSSAI FOOD LICENCE</span>
         </div>
-        <div class="section__service-icons-item" data-aos="flip-right">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--5">
+        <div className="section__service-icons-item" data-aos="flip-right">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--5">
               <svg
-                class="section__service-link-import"
+                className="section__service-link-import"
                 width="512"
                 height="512"
                 viewBox="0 0 512 512"
@@ -932,20 +932,20 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">IMPORT EXPORT CODE</span>
+          <span className="section__service-text">IMPORT EXPORT CODE</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-left">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--8">
+        <div className="section__service-icons-item" data-aos="fade-left">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--8">
               <svg
-                class="section__service-link-startup-india"
+                className="section__service-link-startup-india"
                 width="362"
                 height="362"
                 viewBox="0 0 362 362"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="rupees 1" clip-path="url(#clip0)">
+                <g id="rupees 1" clipPath="url(#clip0)">
                   <path
                     id="Vector"
                     d="M307 185C307 256.797 248.797 315 177 315C105.203 315 47 256.797 47 185C47 113.203 105.203 55 177 55C248.797 55 307 113.203 307 185Z"
@@ -989,15 +989,15 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span class="section__service-text">STARTUP INDIA REGISTRATION</span>
+          <span className="section__service-text">STARTUP INDIA REGISTRATION</span>
         </div>
-        <div class="section__service-icons-item" data-aos="fade-left">
-          <span class="section__service-icon">
-            <a href="#" class="section__service-link section__service-link--10">
+        <div className="section__service-icons-item" data-aos="fade-left">
+          <span className="section__service-icon">
+            <a href="#" className="section__service-link section__service-link--10">
               <img src="/assets//icon-images/gst registration.jpg" alt="" />
             </a>
           </span>
-          <span class="section__service-text">GST REGISTRATION</span>
+          <span className="section__service-text">GST REGISTRATION</span>
         </div>
       </div>
     </section>

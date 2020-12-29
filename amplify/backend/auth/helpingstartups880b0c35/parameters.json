@@ -52,10 +52,9 @@
         "Facebook",
         "Google"
     ],
-    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"211056387243696\",\"client_secret\":\"cd4edd26f59062a8f27413f9ca7a6045\"},{\"ProviderName\":\"Google\",\"client_id\":\"382588452484-nlpvoigkahoadp7a9e9hrgd325gn554a.apps.googleusercontent.com\",\"client_secret\":\"7pROTj-LNDqf0pt8aGqQu17M\"}]",
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}},{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://helpingstartups.netlify.com/\"],\"LogoutURLs\":[\"https://helpingstartups.netlify.com/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "dependsOn": []
+    "dependsOn": [],
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}"
 }

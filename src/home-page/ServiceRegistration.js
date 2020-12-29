@@ -1,6 +1,6 @@
 import React from "react";
-import './ServiceRegistration.scss';
-import ServiceCard from '../components/ServiceCard';
+import "./ServiceRegistration.scss";
+import ServiceCard from "../components/ServiceCard";
 
 function ServiceRegistration() {
   const cardItems = [
@@ -16,7 +16,7 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 6499,
-      url:'/private-limited'
+      url: "/private-limited",
     },
     {
       heading: "Limited Liability Partnership",
@@ -30,7 +30,7 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 5999,
-      url:'/limited-liability'
+      url: "/limited-liability",
     },
     {
       heading: "One Person Company",
@@ -44,25 +44,28 @@ function ServiceRegistration() {
         "PAN & TAN",
       ],
       price: 5999,
-      url:'/one-person-company'
+      url: "/one-person-company",
     },
     {
-        heading: "Section 8 Company",
-        listItems: [
-          "DIN of 2 Directors",
-          "Name Reservation",
-          "Certificate of Incorporation",
-          "Section 8 Licence",
-          "5 copies of MOA & AOA",
-          "Share Certificates",
-          "1 DSC PAN & TAN",
-        ],
-        price: 9999,
-        url:'/section-eight-company'
-      },
+      heading: "Section 8 Company",
+      listItems: [
+        "DIN of 2 Directors",
+        "Name Reservation",
+        "Certificate of Incorporation",
+        "Section 8 Licence",
+        "5 copies of MOA & AOA",
+        "Share Certificates",
+        "1 DSC PAN & TAN",
+      ],
+      price: 9999,
+      url: "/section-eight-company",
+    },
   ];
   return (
-    <section id="section-service-registration" className="section section-service-registration">
+    <section
+      id="section-service-registration"
+      className="section section-service-registration"
+    >
       <div className="section__service-registration">
         <div className="section__service-header">
           <span>
@@ -74,7 +77,9 @@ function ServiceRegistration() {
         </div>
 
         <div className="section__service-cards">
-          {cardItems.map(cardItem => <ServiceCard {...cardItem} />)}
+          {cardItems.map((cardItem, index) => (
+            <ServiceCard key={index} {...cardItem} />
+          ))}
         </div>
 
         <div className="section__service-button">

@@ -44,8 +44,8 @@ function TrademarkServices() {
         </div>
 
         <div className="section__trademark-cards">
-          {cardItems.map((cardItem) => (
-            <TrademarkCard {...cardItem} />
+          {cardItems.map((cardItem, index) => (
+            <TrademarkCard key={index} {...cardItem} />
           ))}
         </div>
       </div>

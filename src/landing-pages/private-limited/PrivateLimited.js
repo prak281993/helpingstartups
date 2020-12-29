@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { StickyContainer } from "react-sticky";
 import FeedbackAndServices from "../../common/FeedbackAndServices";
 import LandingPagesHeader from "../../common/LandingPagesHeader";
 import BackgroundImage from "../../components/BackgroundImage";
@@ -6,7 +7,7 @@ import PrivateLimitedContent from "./PrivateLimitedContent";
 
 function PrivateLimited() {
   return (
-    <div>
+    <StickyContainer>
       <BackgroundImage imageUrl={"/assets/private-limited-bg.jpg"} />
       <LandingPagesHeader
         startingPrice="5,499"
@@ -14,7 +15,7 @@ function PrivateLimited() {
       />
       <PrivateLimitedContent />
       <FeedbackAndServices />
-    </div>
+    </StickyContainer>
   );
 }
 

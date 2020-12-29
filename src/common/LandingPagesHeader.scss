@@ -4,6 +4,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  transition: all .5s;
   &__header {
     position: absolute;
     width: 100%;
@@ -28,6 +29,17 @@
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+  }
+  &-query__section-scroll {
+    position: fixed;
+    width: 100%;
+    top: -20%;
+    background: rgba(black,.7);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
   }
   &-query__advantages {
     transform: translateY(-8%);
@@ -91,6 +103,12 @@
         background-color: $color-ocean-green-dark;
       }
     }
+  }
+
+  &-query__form-sticky{
+    position: fixed;
+    left: 0;
+    top: 0;
   }
   &-query__form-button {
     margin-top: 2rem;

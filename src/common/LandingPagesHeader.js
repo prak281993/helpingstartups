@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import QueryForm from "./QueryForm";
 import "./LandingPagesHeader.scss";
 import Toast from "../components/Toast";
-import { useState } from "react";
 
 function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
   const [displayToast, setDisplayToast] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
   const handleToast = (isOpen) => {
     setDisplayToast(isOpen);
     setTimeout(() => setDisplayToast(false), 3000);
   };
+
+  const handleScroll = (event) => {
+    if (event.wheelDelta < 0 || window.scrollY === 0) {
+      setIsScroll(false);
+    } else {
+      setIsScroll(true);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <header className="landing-page">
       <div className="landing-page__customer-query">
@@ -21,7 +32,13 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
             <h1>Have a query? Get it resolved immediately</h1>
           </div>
         </div>
-        <section className="landing-page-query__section">
+        <section
+          className={`${
+            !isScroll
+              ? "landing-page-query__section"
+              : "landing-page-query__section-scroll"
+          }`}
+        >
           <div
             className="landing-page-query__advantages"
             data-aos="fade-in"

@@ -10,7 +10,7 @@ function UserProfile() {
   };
   return (
     <div className="dropdown">
-      <Link
+      <span
         className="nav-link dropdown-toggle"
         id="navbarDropdownMenuLink"
         data-toggle="dropdown"
@@ -23,18 +23,18 @@ function UserProfile() {
           height="30"
           className="rounded-circle"
         />
-      </Link>
+      </span>
       <div style={{fontSize:'1.6rem'}} className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <Link className="customnavbar__link" className="dropdown-item">
+        <span className="customnavbar__link" className="dropdown-item">
           My Profile
-        </Link>
-        <Link
+        </span>
+        <span
           onClick={handleLogOut}
           className="customnavbar__link"
           className="dropdown-item"
         >
           Log Out
-        </Link>
+        </span>
       </div>
     </div>
   );

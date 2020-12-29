@@ -4,13 +4,13 @@ import "./AllServices.scss";
 
 function AllServices() {
   return (
-    <section class="section-allservices">
-      <div class="section__allservices">
-        <div class="section__allservices-details section__allservices-startbusiness">
-          <div class="section__allservices-details--header">
+    <section className="section-allservices">
+      <div className="section__allservices">
+        <div className="section__allservices-details section__allservices-startbusiness">
+          <div className="section__allservices-details--header">
             <h1>Start A Business</h1>
           </div>
-          <div class="section__allservices-details--links">
+          <div className="section__allservices-details--links">
             <ul>
               <li>
                 <Link to='/private-limited'>Private Limited Company</Link>
@@ -30,11 +30,11 @@ function AllServices() {
             </ul>
           </div>
         </div>
-        <div class="section__allservices-details section__allservices-trademark">
-          <div class="section__allservices-details--header">
+        <div className="section__allservices-details section__allservices-trademark">
+          <div className="section__allservices-details--header">
             <h1>Trademark & Copyright</h1>
           </div>
-          <div class="section__allservices-details--links">
+          <div className="section__allservices-details--links">
             <ul>
               <li>
                 <Link to="/">Trademark Registration</Link>
@@ -54,11 +54,11 @@ function AllServices() {
             </ul>
           </div>
         </div>
-        <div class="section__allservices-details section__allservices-registration">
-          <div class="section__allservices-details--header">
+        <div className="section__allservices-details section__allservices-registration">
+          <div className="section__allservices-details--header">
             <h1>Govt & Tax Registration</h1>
           </div>
-          <div class="section__allservices-details--links">
+          <div className="section__allservices-details--links">
             <ul>
               <li>
                 <Link to="/">GST Registration</Link>
@@ -78,11 +78,11 @@ function AllServices() {
             </ul>
           </div>
         </div>
-        <div class="section__allservices-details section__allservices-documentation">
-          <div class="section__allservices-details--header">
+        <div className="section__allservices-details section__allservices-documentation">
+          <div className="section__allservices-details--header">
             <h1>Legal Documentation</h1>
           </div>
-          <div class="section__allservices-details--links">
+          <div className="section__allservices-details--links">
             <ul>
               <li>
                 <Link to="/">Non-Disclosure Agreement</Link>
@@ -103,9 +103,9 @@ function AllServices() {
           </div>
         </div>
       </div>
-      <div class="section__allservices-button">
-        <span class="section__allservices-details-custom-btn">
-          <Link href="#popup" class="custom-btn custom-btn--outline">
+      <div className="section__allservices-button">
+        <span className="section__allservices-details-custom-btn">
+          <Link href="#popup" className="custom-btn custom-btn--outline">
             View All Services
           </Link>
         </span>
