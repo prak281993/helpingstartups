@@ -2,7 +2,7 @@ import { API } from "aws-amplify";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-function QueryForm({ handleToast }) {
+function QueryForm({ handleToast, isScroll }) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
@@ -35,7 +35,11 @@ function QueryForm({ handleToast }) {
     }
   };
   return (
-    <form className="landing-page-query__form">
+    <form
+      className={`landing-page-query__form ${
+        isScroll ? "landing-page-query__form-scroll" : ""
+      }`}
+    >
       <div className="landing-page-query__form-fields">
         <input
           placeholder="Full Name"

@@ -86,7 +86,7 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <QueryForm handleToast={handleToast} />
+            <QueryForm isScroll={isScroll} handleToast={handleToast} />
           </div>
         </section>
 

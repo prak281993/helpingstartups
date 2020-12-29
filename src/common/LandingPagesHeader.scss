@@ -104,11 +104,8 @@
       }
     }
   }
-
-  &-query__form-sticky{
-    position: fixed;
-    left: 0;
-    top: 0;
+  &-query__form-scroll{
+    display: flex;
   }
   &-query__form-button {
     margin-top: 2rem;
