@@ -50,7 +50,8 @@
       margin: 10rem auto;
       justify-content: space-around;
       font-family: arial, sans-serif;
-      display: flex;
+      display: flex;      
+      flex-wrap: wrap;
     }
 
     &-icons-item {
@@ -67,31 +68,27 @@
       width: 15rem;
       height: 10rem;
       display: flex;
+      background-size: 15rem 10rem;
     }
 
     &-link--1 {
       background-image: url(/assets/svg/on-time-delivery.svg);
-      background-size: 15rem 10rem;
       background-repeat: no-repeat;
     }
     &-link--2 {
       background-image: url(/assets/svg/transparent-pricing.svg);
-      background-size: 15rem 10rem;
       background-repeat: no-repeat;
     }
     &-link--3 {
       background-image: url(/assets/svg/tech-driven-paltform.svg);
-      background-size: 15rem 10rem;
       background-repeat: no-repeat;
     }
     &-link--4 {
       background-image: url(/assets/svg/confidentiality.svg);
-      background-size: 15rem 10rem;
       background-repeat: no-repeat;
     }
     &-link--5 {
       background-image: url(/assets/svg/expert-team.svg);
-      background-size: 15rem 10rem;
       background-repeat: no-repeat;
     }
 
@@ -165,6 +162,16 @@
 
       &--right {
         width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    &__company-details {
+      &-link {
+        width: 20rem;
+        height: 15rem;
+        background-size: 20rem 15rem;
       }
     }
   }
