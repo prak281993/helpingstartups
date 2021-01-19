@@ -6,6 +6,7 @@ import { UserContext } from "../App";
 import "./Checkout.scss";
 
 function Checkout() {
+  const awsSrc = process.env.REACT_APP_AWS_URL;
   const history = useHistory();
   const [formData, setFormData] = useState({
     firstName: "",
@@ -50,11 +51,11 @@ function Checkout() {
     });
     const { id, amount } = resp.order;
     var options = {
-      key: "rzp_test_7Gwiwk4e4EA3au", 
+      key: "rzp_test_7Gwiwk4e4EA3au",
       amount: amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
       currency: "INR",
       description: purchaseData.plan,
-      image: "/assets/money.png",
+      image: `${awsSrc}/money.png`,
       order_id: id,
       handler: function (response) {
         history.push(`/${purchaseData.service}`);

@@ -1,13 +1,17 @@
 import React from "react";
-import './ServiceIcons.scss';
+import "./ServiceIcons.scss";
 
 function ServiceIcons() {
+  const awsSrc = process.env.REACT_APP_AWS_URL;
   return (
     <section className="section section-service-icons">
       <div className="section__service-icons">
         <div className="section__service-icons-item" data-aos="fade-right">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--1">
+            <a
+              href="#"
+              className="section__service-link section__service-link--1"
+            >
               <svg
                 className="section__service-link-p-registration-svg"
                 width="512"
@@ -221,11 +225,16 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span className="section__service-text">PROPRIETORSHIP REGISTRATION</span>
+          <span className="section__service-text">
+            PROPRIETORSHIP REGISTRATION
+          </span>
         </div>
         <div className="section__service-icons-item" data-aos="fade-right">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--2">
+            <a
+              href="#"
+              className="section__service-link section__service-link--2"
+            >
               <svg
                 className="section__service-link-company-svg"
                 width="512"
@@ -482,7 +491,10 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="flip-left">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--3">
+            <a
+              href="#"
+              className="section__service-link section__service-link--3"
+            >
               <svg
                 className="section__service-link-partnership"
                 width="512"
@@ -590,7 +602,10 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="fade-left">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--9">
+            <a
+              href="#"
+              className="section__service-link section__service-link--9"
+            >
               <svg
                 className="section__service-link-msme"
                 width="512"
@@ -726,7 +741,10 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="fade-left">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--7">
+            <a
+              href="#"
+              className="section__service-link section__service-link--7"
+            >
               <svg
                 className="section__service-link-trademark"
                 width="512"
@@ -785,15 +803,21 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="fade-right">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--6">
-              <img src="/assets//icon-images/tax.svg" alt="" />
+            <a
+              href="#"
+              className="section__service-link section__service-link--6"
+            >
+              <img src={`${awsSrc}/icon-images/tax.svg`} alt="" />
             </a>
           </span>
           <span className="section__service-text">GST RETURN</span>
         </div>
         <div className="section__service-icons-item" data-aos="fade-right">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--4">
+            <a
+              href="#"
+              className="section__service-link section__service-link--4"
+            >
               <svg
                 className="section__service-link-cutlery"
                 width="512"
@@ -866,7 +890,10 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="flip-right">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--5">
+            <a
+              href="#"
+              className="section__service-link section__service-link--5"
+            >
               <svg
                 className="section__service-link-import"
                 width="512"
@@ -936,7 +963,10 @@ function ServiceIcons() {
         </div>
         <div className="section__service-icons-item" data-aos="fade-left">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--8">
+            <a
+              href="#"
+              className="section__service-link section__service-link--8"
+            >
               <svg
                 className="section__service-link-startup-india"
                 width="362"
@@ -989,12 +1019,17 @@ function ServiceIcons() {
               </svg>
             </a>
           </span>
-          <span className="section__service-text">STARTUP INDIA REGISTRATION</span>
+          <span className="section__service-text">
+            STARTUP INDIA REGISTRATION
+          </span>
         </div>
         <div className="section__service-icons-item" data-aos="fade-left">
           <span className="section__service-icon">
-            <a href="#" className="section__service-link section__service-link--10">
-              <img src="/assets//icon-images/gst registration.jpg" alt="" />
+            <a
+              href="#"
+              className="section__service-link section__service-link--10"
+            >
+              <img src={`${awsSrc}/icon-images/gst registration.jpg`} alt="" />
             </a>
           </span>
           <span className="section__service-text">GST REGISTRATION</span>

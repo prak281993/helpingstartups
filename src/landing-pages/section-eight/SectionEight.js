@@ -5,9 +5,10 @@ import BackgroundImage from "../../components/BackgroundImage";
 import SectionEightContent from "./SectionEightContent";
 
 function SectionEight() {
+  const awsSrc = process.env.REACT_APP_AWS_URL;
   return (
     <div>
-      <BackgroundImage imageUrl={"/assets/section-eight-company.jpg"} />
+      <BackgroundImage imageUrl={`${awsSrc}/section-eight-company.jpg`} />
       <LandingPagesHeader startingPrice='9,999' companyType={"Section 8 Company"} />
       <SectionEightContent />
       <FeedbackAndServices />

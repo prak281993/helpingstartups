@@ -4,6 +4,7 @@ import "./LandingPagesHeader.scss";
 import Toast from "../components/Toast";
 
 function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
+  const awsSrc = process.env.REACT_APP_AWS_URL;
   const [displayToast, setDisplayToast] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const handleToast = (isOpen) => {
@@ -48,7 +49,7 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
             <ul>
               <li className="advantages__item">
                 <span className="advantages__item-icon">
-                  <img src="assets/svg/rupee.svg" alt="" />
+                  <img src={`${awsSrc}/svg/rupee.svg`} alt="" />
                 </span>
                 <span className="advantages__item-text">
                   <p>Starting @ Rs {startingPrice}</p>
@@ -56,7 +57,7 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
               </li>
               <li className="advantages__item">
                 <span className="advantages__item-icon">
-                  <img src="assets/svg/piggy-bank.svg" alt="" />
+                  <img src={`${awsSrc}/svg/piggy-bank.svg`} alt="" />
                 </span>
                 <span className="advantages__item-text">
                   <p>Cost Effective</p>
@@ -64,7 +65,7 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
               </li>
               <li className="advantages__item">
                 <span className="advantages__item-icon">
-                  <img src="assets/svg/ontime.svg" alt="" />
+                  <img src={`${awsSrc}/svg/ontime.svg`} alt="" />
                 </span>
                 <span className="advantages__item-text">
                   <p>Deliver On Time</p>
@@ -72,7 +73,7 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
               </li>
               <li className="advantages__item">
                 <span className="advantages__item-icon">
-                  <img src="assets/svg/expert-member.svg" alt="" />
+                  <img src={`${awsSrc}/svg/expert-member.svg`} alt="" />
                 </span>
                 <span className="advantages__item-text">
                   <p>Expert Panel</p>

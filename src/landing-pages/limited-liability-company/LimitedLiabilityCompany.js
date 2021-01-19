@@ -5,9 +5,10 @@ import BackgroundImage from "../../components/BackgroundImage";
 import LimitedLiabilityContent from "./LimitedLiabilityContent";
 
 function LimitedLiabilityCompany() {
+  const awsSrc = process.env.REACT_APP_AWS_URL;
   return (
     <div>
-      <BackgroundImage imageUrl={"/assets/limited-liability-company-bg.png"} />
+      <BackgroundImage imageUrl={`${awsSrc}/limited-liability-company-bg.png`} />
       <LandingPagesHeader startingPrice='5,999' companyType={"Limited Liability Company"} />
       <LimitedLiabilityContent />
       <FeedbackAndServices />
