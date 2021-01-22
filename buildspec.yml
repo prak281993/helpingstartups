@@ -13,10 +13,10 @@ phases:
         - npm install
     build:
       commands:
-      - echo Building...
-      - npm run build
-  artifacts:
-    files:
-      - "**/*"
-    discard-paths: no
-    base-directory: build
+        - echo Building...
+        - npm run build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
