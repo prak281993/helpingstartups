@@ -125,10 +125,6 @@ Parameters:
   authProvidersUserPool:
     Type: CommaDelimitedList
       
-  hostedUIProviderCreds:
-    Type: String
-  
-            
   hostedUIProviderMeta:
     Type: String
   
@@ -150,6 +146,10 @@ Parameters:
   
             
             
+  hostedUIProviderCreds:
+    Type: String
+    Default: '[]'
+  
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
 
