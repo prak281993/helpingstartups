@@ -6,12 +6,12 @@ import CompanyDifferences from "../../common/CompanyDifferences";
 
 function PrivateLimitedDetails() {
   return (
-    <section class="private-limited__allcontents">
-      <section class="private-limited__about">
-        <div class="private-limited__about-header">
+    <section className="private-limited__allcontents">
+      <section className="private-limited__about">
+        <div className="private-limited__about-header">
           <h1>WHAT IS A PRIVATE LIMITED COMPANY</h1>
         </div>
-        <div class="private-limited__about-content">
+        <div className="private-limited__about-content">
           <p>
             A private company is a privately owned/ close knitted organisation
             incorporated under the companies Act, 2013 and governs by the
@@ -24,11 +24,11 @@ function PrivateLimitedDetails() {
           </p>
         </div>
       </section>
-      <section class="private-limited__features">
-        <div class="private-limited__features-header">
+      <section className="private-limited__features">
+        <div className="private-limited__features-header">
           <h1>FEATURES OF A PRIVATE LIMITED COMPANY</h1>
         </div>
-        <div class="private-limited__features-content">
+        <div className="private-limited__features-content">
           <ul>
             <li>
               <span>
@@ -65,61 +65,61 @@ function PrivateLimitedDetails() {
           </ul>
         </div>
       </section>
-      <section class="private-limited__requirements">
-        <div class="private-limited__requirements-header">
+      <section className="private-limited__requirements">
+        <div className="private-limited__requirements-header">
           <h1>BASIC REQUIREMENTS</h1>
         </div>
-        <div class="private-limited__requirements-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">FOR A DIRECTOR</h5>
+        <div className="private-limited__requirements-content">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">FOR A DIRECTOR</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">Must be an Indian resident</li>
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">Must be an Indian resident</li>
+                    <li className="list-group-item">
                       Minimum capital requirement is NIL
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       DIN (Directors Identification Number) is mandatory
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       DSC (Digital Signature Certificate) is mandatory
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">FOR A SUBSCRIBER</h5>
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">FOR A SUBSCRIBER</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">Can be of any Nationality</li>
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">Can be of any Nationality</li>
+                    <li className="list-group-item">
                       DSC (Digital Signature Certificate) is mandatory
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Subscription of Capital is mandatory
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">FOR A REGISTERED OFFICE</h5>
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">FOR A REGISTERED OFFICE</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">
                       Rent/lease Agreement if on rent/lease
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       NOC from the owner of the premises
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Utility bill in the name of the owner not older than 2
                       months
                     </li>
@@ -131,11 +131,11 @@ function PrivateLimitedDetails() {
         </div>
       </section>
 
-      <section class="private-limited__procedure">
-        <div class="private-limited__procedure-header">
+      <section className="private-limited__procedure">
+        <div className="private-limited__procedure-header">
           <h1>PROCEDURE FOR ITS INCORPORATION</h1>
         </div>
-        <div class="private-limited__procedure-content">
+        <div className="private-limited__procedure-content">
           <ul>
             <li>
               <div>Apply for Digital Signatures</div>
@@ -164,96 +164,96 @@ function PrivateLimitedDetails() {
           <h1>DOCUMENTS FOR INCORPORATION</h1>
         </div>
         <div className="private-limited__documents-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">FOR DIRECTORS AND SUBSCRIBER</h5>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">FOR DIRECTORS AND SUBSCRIBER</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">
                       Proof of Identity (Driving License/Voter Id/Passport any
                       of these)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Proof of Present Address (If different from Permanent
                       Address)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Proof of Permanent Residence (Any Utility Bill includes
                       Electricity Bill, Mobile Bill, Gas Bill/ Bank Passbook
                       copy/ Bank Statement not older than 2 months)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Passport size photograph of Directors
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       PAN card, Aadhar card and Passport (if any) is mandatory
                       for all directors and subscribers
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       DSC (Digital Signature Certificate)
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">FOR REGISTERED OFFICE</h5>
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">FOR REGISTERED OFFICE</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">
                       Proof of Address (Electricity Bill in the name of Owner
                       not older than 2 months)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       NOC (No Objection Certificate) from the owner in the name
                       of any director
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       If Rented then rent agreement
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="private-limited__requirements-content-card card">
-                  <div class="card-body">
-                    <h5 class="card-title">ADDITIONAL INFORMATION REQUIRED</h5>
+              <div className="col-sm-4">
+                <div className="private-limited__requirements-content-card card">
+                  <div className="card-body">
+                    <h5 className="card-title">ADDITIONAL INFORMATION REQUIRED</h5>
                   </div>
-                  <ul class="list-group">
-                    <li class="list-group-item">
+                  <ul className="list-group">
+                    <li className="list-group-item">
                       DIN No. of the Director (If available and already having)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Nationality of directors and shareholders
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Occupation and Educational qualifications of directors and
                       shareholders
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Email Id and Phone no of directors and shareholders
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Place of Birth of directors and shareholders
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Duration of stay at present address of directors and
                       shareholders (in years and months)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Proposed names for the company in order of preference
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Total proposed Capital Contribution (in lakhs)
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Percentage of Share Holding among proposed subscribers
                     </li>
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                       Proposed Business activity in Brief (4-5 lines)
                     </li>
                   </ul>

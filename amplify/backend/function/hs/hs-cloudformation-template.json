@@ -69,7 +69,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-helpingstartups-dev-212842-deployment",
-          "S3Key": "amplify-builds/hs-666b6e4e30775238554c-build.zip"
+          "S3Key": "amplify-builds/hs-723530594158412b6142-build.zip"
         }
       }
     },

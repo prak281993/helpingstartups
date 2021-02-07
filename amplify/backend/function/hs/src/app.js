@@ -18,8 +18,18 @@ const nodemailer = require("nodemailer");
 var app = express();
 app.use(bodyParser.json());
 app.use(awsServerlessExpressMiddleware.eventContext());
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Headers", "content-type");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "PUT, POST, GET, DELETE, PATCH, OPTIONS"
+  );
+  next();
+});
 
-app.use(cors());
+// app.use(cors());
 
 /**********************
  * Example get method *
@@ -85,7 +95,7 @@ app.post("/hs/purchaseverification", async (req, res) => {
 app.post("/hs/send-email", (req, res) => {
   const { fullname, sender, contactNumber, queryMessage, subject } = req.body;
   let mailTransporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "email.ap-south-1.amazonaws.com",
     auth: {
       user: process.env.SMTP_MAIL,
       pass: process.env.SMTP_PASS,

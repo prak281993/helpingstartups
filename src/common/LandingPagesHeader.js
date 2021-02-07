@@ -13,11 +13,16 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
   };
 
   const handleScroll = (event) => {
-    if (event.wheelDelta < 0 || window.scrollY === 0) {
-      setIsScroll(false);
-    } else {
+    if (window.scrollY >= 500) {
       setIsScroll(true);
+    } else {
+      setIsScroll(false);
     }
+    // if (event.wheelDelta < 0 || window.scrollY === 0) {
+    //   setIsScroll(false);
+    // } else {
+    //   setIsScroll(true);
+    // }
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

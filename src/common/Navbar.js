@@ -75,7 +75,7 @@ function Navbar() {
                   TRADEMARK & COPYRIGHT
                 </h4>
                 <li className="customnavbar__submenu-list-item">
-                  <Link to="/">Trademark Registration</Link>
+                  <Link to="/trademark-registration">Trademark Registration</Link>
                 </li>
                 <li className="customnavbar__submenu-list-item">
                   <Link to="/">Trademark Objection</Link>

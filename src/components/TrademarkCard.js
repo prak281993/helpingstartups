@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.scss";
 
-function TrademarkCard({ heading, listItems, price }) {
+function TrademarkCard({ heading, listItems, price, url }) {
   return (
     <div key={heading} className="trademark-card" data-aos="zoom-in">
       <div className="trademark-card__side trademark-card__side--front">
@@ -21,9 +22,9 @@ function TrademarkCard({ heading, listItems, price }) {
       </div>
       <div className="trademark-card__side trademark-card__side--back trademark-card__side--back-1">
         <div className="trademark-card__cta">
-          <a href="#popup" className="custom-btn custom-btn--white">
+          <Link to={url} className="custom-btn custom-btn--white">
             Start Now
-          </a>
+          </Link>
         </div>
       </div>
     </div>

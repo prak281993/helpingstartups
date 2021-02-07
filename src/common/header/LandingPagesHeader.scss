@@ -1,0 +1,33 @@
+@import "../../sass/variables.scss";
+.landing-page-header {
+  background-image: url("/assets/form-bg.svg");
+  width: 100vw;
+  height: 100vh;
+  & .container {
+    position: relative;
+    top: 10rem;
+  }
+  &__about {
+    color: $color-white-primary;
+    position: relative;
+    top: 2rem;
+    &--title {
+      font-size: 4rem;
+      font-weight: 600;
+      font-family: "Nunito Sans", sans-serif;
+      display: block;
+      border-bottom: 5px solid #107fe0;
+    }
+    &--description {
+      font-size: 2rem;
+      font-family: "Josefin Sans", sans-serif;
+      position: relative;
+      top: 2rem;
+    }
+  }
+  &__form-container {
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+  }
+}

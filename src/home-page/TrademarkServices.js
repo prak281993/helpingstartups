@@ -8,21 +8,25 @@ function TrademarkServices() {
       heading: "Trademark Registration",
       listItems: ["Trademark Search", "Registration in One Class"],
       price: 6999,
+      url:'/trademark-registration'
     },
     {
       heading: "Trademark Objection",
       listItems: ["Trademark Reply Filing", "Updates on Status"],
       price: 2999,
+      url:'/trademark-objection'
     },
     {
       heading: "Trademark Renewal",
       listItems: ["Check Status", "Trademark Reveal"],
       price: 1999,
+      url:'/trademark-renewal'
     },
     {
       heading: "Trademark Restoration",
       listItems: ["Check Status", "Filing"],
       price: 6999,
+      url:'/trademark-restoration'
     },
   ];
   return (

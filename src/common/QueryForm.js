@@ -1,5 +1,5 @@
 import { API } from "aws-amplify";
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 
 function QueryForm({ handleToast, isScroll }) {
@@ -7,13 +7,14 @@ function QueryForm({ handleToast, isScroll }) {
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
   const [queryMessage, setQueryMessage] = useState("");
-  const [isSticky, setIsSticky] = useState(false);
   // const mailApi =
   //   "https://us-central1-helping-startups.cloudfunctions.net/emailSender";
   const mailApi = "/hs/send-email";
   const sendMail = async (e) => {
     e.preventDefault();
     try {
+      const resp = await API.get("helpingstartups", "/hs");
+      console.log(resp);
       const response = await API.post("helpingstartups", mailApi, {
         body: {
           fullname: fullname,

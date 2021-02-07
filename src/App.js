@@ -13,7 +13,7 @@ import "./App.css";
 import { Auth } from "aws-amplify";
 import Checkout from "./common/Checkout";
 import BackgroundVideo from "./components/BackgroundVideo";
-import TrademarkServicesPage from "./landing-pages/trademark-services/TrademarkServicesPage";
+import TrademarkRegistration from "./landing-pages/trademark-registration/TrademarkRegistration";
 
 export const UserContext = createContext(null);
 
@@ -70,7 +70,10 @@ function App() {
               />
               <Route path="/one-person-company" component={OnePersonCompany} />
               <Route path="/section-eight-company" component={SectionEight} />
-              <Route path="/trademark-services" component={TrademarkServicesPage} />
+              <Route
+                path="/trademark-registration"
+                component={TrademarkRegistration}
+              />
               <Route exact path="/signin">
                 {!authData ? (
                   <AmplifyAuthenticator>
