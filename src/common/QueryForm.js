@@ -13,8 +13,6 @@ function QueryForm({ handleToast, isScroll }) {
   const sendMail = async (e) => {
     e.preventDefault();
     try {
-      const resp = await API.get("helpingstartups", "/hs");
-      console.log(resp);
       const response = await API.post("helpingstartups", mailApi, {
         body: {
           fullname: fullname,
