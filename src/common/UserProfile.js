@@ -10,7 +10,7 @@ function UserProfile() {
     history.push("/");
   };
   return (
-    <div className="dropdown">
+    <div className="dropdown bg-dark text-light">
       <span
         className="nav-link dropdown-toggle"
         id="navbarDropdownMenuLink"

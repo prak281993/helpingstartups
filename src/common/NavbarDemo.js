@@ -17,7 +17,7 @@ export default function NavbarDemo() {
         </Link>
         <div
           id="navbarContent"
-          className="collapse navbar-collapse order-sm-12 order-lg-1"
+          className="navbarContent collapse navbar-collapse order-sm-12 order-lg-1"
         >
           <ul className="navbar-nav ml-auto">
             <li onMouseOver={() => setShowMegaMenu(false)} className="nav-item">
