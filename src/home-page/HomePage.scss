@@ -31,16 +31,12 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     box-sizing: border-box; 
     background:rgba($color-video-overlay,0.4);
-    overflow-x: hidden;
     color: #777;
 
     .bg-video {
         position: fixed;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        overflow: hidden;
         z-index: -1;
         opacity: 0.8;
 
@@ -50,6 +46,10 @@ body {
             object-fit: cover;
         }
     }
+}
+
+.main-container{
+    width: 100vw;
 }
 
 @media only screen and (max-width: 768px) {

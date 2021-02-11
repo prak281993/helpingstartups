@@ -100,3 +100,14 @@
     font-size: 1.8rem;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .landing-query__form {
+    &-fields {
+      padding: 1rem;
+    }
+    &--question {
+      height: 6rem;
+    }
+  }
+}

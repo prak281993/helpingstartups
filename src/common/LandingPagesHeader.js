@@ -18,11 +18,6 @@ function LandingPagesHeader({ startingPrice = "4,999", companyType }) {
     } else {
       setIsScroll(false);
     }
-    // if (event.wheelDelta < 0 || window.scrollY === 0) {
-    //   setIsScroll(false);
-    // } else {
-    //   setIsScroll(true);
-    // }
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

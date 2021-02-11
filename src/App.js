@@ -14,6 +14,7 @@ import { Auth } from "aws-amplify";
 import Checkout from "./common/Checkout";
 import BackgroundVideo from "./components/BackgroundVideo";
 import TrademarkRegistration from "./landing-pages/trademark-registration/TrademarkRegistration";
+import NavbarDemo from "./common/NavbarDemo";
 
 export const UserContext = createContext(null);
 
@@ -57,7 +58,8 @@ function App() {
     <div className="main-container">
       <Router>
         <UserContext.Provider value={user}>
-          <Navbar />
+          {/* <Navbar /> */}
+          <NavbarDemo />
           <BackgroundVideo />
           <ScrollToTop>
             <Switch>

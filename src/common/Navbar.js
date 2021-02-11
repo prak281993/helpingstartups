@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "./Navbar.scss";
 import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
-import { AmplifySignOut } from "@aws-amplify/ui-react";
 import { Auth } from "aws-amplify";
 import UserProfile from "./UserProfile";
 

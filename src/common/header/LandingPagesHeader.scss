@@ -5,7 +5,8 @@
   height: 100vh;
   & .container {
     position: relative;
-    top: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   &__about {
     color: $color-white-primary;
@@ -29,5 +30,21 @@
     padding: 1rem;
     width: 70%;
     margin: auto;
+  }
+
+  @media only screen and (max-width:750px) {
+    &__about {
+      &--title {
+        font-size: 3rem;
+        border: none;
+      }
+      &--description {
+        font-size: 1.5rem;
+        top: 1rem;
+      }
+    }
+    &__form-container {
+      transform: translateY(12%);
+    }
   }
 }
