@@ -1,0 +1,124 @@
+@import "../../sass/variables.scss";
+.trademark-renewal-content {
+  background: $color-white-primary;
+}
+.trademark-renewal-container {
+  padding: 2rem;
+}
+
+.trademark-renewal {
+  &__allcontents {
+    width: 100%;
+    padding: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    & div h1 {
+      font-size: 3.6rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark, 10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__about {
+    &-content {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+    &-allcontent {
+      & > header {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        color: $color-dark-blue;
+      }
+      & main {
+        margin-top: 1rem;
+      }
+    }
+  }
+  &__process {
+    margin-top: 3rem;
+    span {
+      display: block;
+    }
+    &-content {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      font-family: "Josefin Sans", sans-serif;
+      & ol {
+        margin-left: 4rem;
+      }
+      & ul {
+        margin: 0 0 1.5em;
+        list-style: none;
+        counter-reset: step;
+        & li {
+          padding: 2rem;
+          color: $color-white-primary;
+          position: relative;
+          & div {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background-color: rgba($color-green-general, 0.8);
+          }
+          &:before {
+            content: counter(step);
+            text-align: center;
+            counter-increment: step;
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 3rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            background: $color-green-general;
+            overflow: hidden;
+            position: absolute;
+            left: -1.5rem;
+            top: -0.5rem;
+            align-items: flex-end;
+            justify-content: flex-end;
+          }
+        }
+      }
+      &-allcontent {
+        margin-top: 2rem;
+        & > header {
+          font-size: 2rem;
+          font-weight: 800;
+          margin-top: 2rem;
+          color: $color-dark-blue;
+        }
+        & main {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  &__restoration {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      & p {
+        font-size: 1.6rem;
+      }
+      ul{
+        margin-left: 4rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__difference {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

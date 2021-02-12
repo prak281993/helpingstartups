@@ -114,7 +114,7 @@ export default function NavbarDemo() {
                               </li>
                               <li className="nav-item">
                                 <Link
-                                  to="/"
+                                  to="/trademark-objection"
                                   className="nav-link text-small pb-0 "
                                 >
                                   Trademark Objection
@@ -122,7 +122,7 @@ export default function NavbarDemo() {
                               </li>
                               <li className="nav-item">
                                 <Link
-                                  to="/"
+                                  to="/trademark-assignment"
                                   className="nav-link text-small pb-0 "
                                 >
                                   Trademark Assignment
@@ -130,7 +130,7 @@ export default function NavbarDemo() {
                               </li>
                               <li className="nav-item">
                                 <Link
-                                  to="/"
+                                  to="/trademark-renewal"
                                   className="nav-link text-small pb-0 "
                                 >
                                   Trademark Renewal
@@ -138,7 +138,7 @@ export default function NavbarDemo() {
                               </li>
                               <li className="nav-item">
                                 <Link
-                                  to="/"
+                                  to="/copyright-registration"
                                   className="nav-link text-small pb-0 "
                                 >
                                   Copyright Registration

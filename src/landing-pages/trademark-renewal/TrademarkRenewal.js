@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import LandingPagesHeader from "../../common/header/LandingPagesHeader";
-import TrademarkRegistrationContent from "./TrademarkRegistrationContent";
 import FeedbackAndServices from "../../common/FeedbackAndServices";
-import { TRADEMARK_REGISTRATION } from "../../common/header/HeaderTitles";
+import { TRADEMARK_RENEWAL } from "../../common/header/HeaderTitles";
+import TrademarkRenewalContent from "./TrademarkRenewalContent";
 
-export default function TrademarkRegistration() {
+export default function TrademarkRenewal() {
   const headerRef = useRef();
   const contentDivRef = useRef();
   const formRef = useRef();
@@ -40,10 +40,10 @@ export default function TrademarkRegistration() {
     <div>
       <LandingPagesHeader
         headerRef={headerRef}
-        headerTitle={TRADEMARK_REGISTRATION.title}
-        headerDesc={TRADEMARK_REGISTRATION.desc}
+        headerTitle={TRADEMARK_RENEWAL.title}
+        headerDesc={TRADEMARK_RENEWAL.desc}
       />
-      <TrademarkRegistrationContent
+      <TrademarkRenewalContent
         contentDivRef={contentDivRef}
         isFixedForm={isFixedForm}
         formRef={formRef}

@@ -1,0 +1,72 @@
+@import "../../sass/variables.scss";
+.trademark-objection-content {
+  background: $color-white-primary;
+}
+.trademark-objection-container {
+  padding: 2rem;
+}
+
+.trademark-objection {
+  &__allcontents {
+    width: 100%;
+    padding: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    & div h1 {
+      font-size: 3.6rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark, 10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__about {
+    &-content {
+      padding: 2rem 0;
+      & li {
+        margin-left: 4rem;
+      }
+      & p,
+      li {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__examination_report {
+    margin-top: 3rem;
+    span {
+      display: block;
+    }
+    &-content {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      & ol {
+        margin-top: 0.5rem;
+        li {
+          margin-left: 4rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+  &__publication {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__completion {
+    margin-top: 3rem;
+    &-content {
+      padding: 2rem 0;
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

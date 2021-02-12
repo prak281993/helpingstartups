@@ -14,7 +14,9 @@ import { Auth } from "aws-amplify";
 import Checkout from "./common/Checkout";
 import BackgroundVideo from "./components/BackgroundVideo";
 import TrademarkRegistration from "./landing-pages/trademark-registration/TrademarkRegistration";
+import TrademarkObjection from "./landing-pages/trademark-objection/TrademarkObjection";
 import NavbarDemo from "./common/NavbarDemo";
+import TrademarkRenewal from "./landing-pages/trademark-renewal/TrademarkRenewal";
 
 export const UserContext = createContext(null);
 
@@ -76,6 +78,11 @@ function App() {
                 path="/trademark-registration"
                 component={TrademarkRegistration}
               />
+              <Route
+                path="/trademark-objection"
+                component={TrademarkObjection}
+              />
+              <Route path="/trademark-renewal" component={TrademarkRenewal} />
               <Route exact path="/signin">
                 {!authData ? (
                   <AmplifyAuthenticator>

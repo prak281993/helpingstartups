@@ -1,19 +1,19 @@
 import React from "react";
 import QueryForm from "../../common/header/QueryForm";
-import TrademarkRegistrationDetails from "./TrademarkRegistrationDetails";
-import "./TrademarkRegistrationContent.scss";
+import "./TrademarkObjectionContent.scss";
+import TrademarkObjectionDetails from "./TrademarkObjectionDetails";
 
-export default function TrademarkRegistrationContent({
+export default function TrademarkObjectionContent({
   contentDivRef,
   isFixedForm,
   formRef,
 }) {
   return (
-    <div className="trademark-registration-content">
+    <div className="trademark-objection-content">
       <div className="container-fluid">
-        <div className="row trademark-registration-container">
+        <div className="row trademark-objection-container">
           <div ref={contentDivRef} className="col-md-8 col-12">
-            <TrademarkRegistrationDetails />
+            <TrademarkObjectionDetails />
           </div>
           <div className="col-md-4 d-none d-md-block">
             <QueryForm
