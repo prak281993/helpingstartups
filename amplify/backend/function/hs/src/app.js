@@ -18,16 +18,18 @@ const nodemailer = require("nodemailer");
 var app = express();
 app.use(bodyParser.json());
 app.use(awsServerlessExpressMiddleware.eventContext());
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Headers", "content-type");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "PUT, POST, GET, DELETE, PATCH, OPTIONS"
-  );
-  next();
-});
+
+app.use(cors());
+// app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", "*");
+//   res.setHeader("Access-Control-Allow-Credentials", "true");
+//   res.setHeader("Access-Control-Allow-Headers", "content-type");
+//   res.setHeader(
+//     "Access-Control-Allow-Methods",
+//     "PUT, POST, GET, DELETE, PATCH, OPTIONS"
+//   );
+//   next();
+// });
 
 // app.use(cors());
 
@@ -95,7 +97,7 @@ app.post("/hs/purchaseverification", async (req, res) => {
 app.post("/hs/send-email", (req, res) => {
   const { fullname, sender, contactNumber, queryMessage, subject } = req.body;
   let mailTransporter = nodemailer.createTransport({
-    host: "email.ap-south-1.amazonaws.com",
+    host: "email-smtp.ap-south-1.amazonaws.com",
     auth: {
       user: process.env.SMTP_MAIL,
       pass: process.env.SMTP_PASS,
@@ -139,7 +141,7 @@ app.post("/hs/send-email", (req, res) => {
       return res.status(200).json(data);
     }
   });
-  // res.send("Email sent succesfully");
+   res.send("Email sent succesfully");
 });
 
 /****************************
@@ -168,6 +170,10 @@ app.delete("/hs", function (req, res) {
 app.delete("/hs/*", function (req, res) {
   // Add your code here
   res.json({ success: "delete call succeed!", url: req.url });
+});
+
+process.on("uncaughtException", function (err) {
+  console.log(err);
 });
 
 app.listen(3000, function () {

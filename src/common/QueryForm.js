@@ -1,6 +1,7 @@
 import { API } from "aws-amplify";
 import React from "react";
 import { useState } from "react";
+import axios from "axios";
 
 function QueryForm({ handleToast, isScroll }) {
   const [fullname, setFullname] = useState("");
@@ -10,6 +11,7 @@ function QueryForm({ handleToast, isScroll }) {
   // const mailApi =
   //   "https://us-central1-helping-startups.cloudfunctions.net/emailSender";
   const mailApi = "/hs/send-email";
+  // const testMail = "http://localhost:5000/api/send-email";
   const sendMail = async (e) => {
     e.preventDefault();
     try {
@@ -22,6 +24,13 @@ function QueryForm({ handleToast, isScroll }) {
           subject: "Query Mail",
         },
       });
+      // const response = await axios.post(testMail, {
+      //   fullname: fullname,
+      //   sender: email,
+      //   contactNumber: contactNumber,
+      //   queryMessage: queryMessage,
+      //   subject: "Query Mail",
+      // });
       if (response) {
         setFullname("");
         setEmail("");
