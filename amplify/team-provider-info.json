@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "helpingstartups880b0c35": {}
+      },
+      "function": {
+        "hs": {
+          "deploymentBucketName": "amplify-helpingstartups-dev-212842-deployment",
+          "s3Key": "amplify-builds/hs-586e7a742f6e47416332-build.zip"
+        }
       }
     }
   }

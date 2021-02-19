@@ -4,10 +4,7 @@
             "name": "/hs",
             "lambdaFunction": "hs",
             "privacy": {
-                "private": true,
-                "auth": [
-                    "/POST"
-                ]
+                "open": true
             },
             "policyResourceName": "/hs"
         }
@@ -20,7 +17,7 @@
         }
     ],
     "privacy": {
-        "auth": 1,
+        "auth": 0,
         "unauth": 0,
         "authRoleName": "amplify-helpingstartups-dev-212842-authRole",
         "unAuthRoleName": "amplify-helpingstartups-dev-212842-unauthRole"
@@ -34,5 +31,6 @@
                 "Arn"
             ]
         }
-    ]
+    ],
+    "uuid": "5c83b488"
 }

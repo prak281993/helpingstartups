@@ -14,3 +14,9 @@ export const TRADEMARK_RENEWAL = {
   desc:
     "Once we applied for trademark its validity remains just for 10 years after that one needs to file for Trademark Renewal. There are many advantages to renewing a trademark. Registration of the trademark awards the holder of the trademark many rights that are protected by law.",
 };
+
+export const PROPRIETORSHIP = {
+  title: "Proprietership",
+  desc:
+    "Sole Proprietorship firms are one of the most commonly seen and easiest form of business done in India as it is not governed by any specific law which is owned, managed and controlled by a single person and referred as Unorganized form of business.",
+};

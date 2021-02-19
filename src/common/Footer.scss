@@ -1,0 +1,105 @@
+@import "../sass/variables.scss";
+.footer {
+  height: 100%;
+  background: rgba($color-dark-1, 0.4);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  &-content {
+    width: 50%;
+    padding: 2rem 2rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fff;
+  }
+  &__heading {
+    color: $color-white-primary;
+  }
+  &__media {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    & > a {
+      text-decoration: none;
+    }
+    &-button {
+      display: inline-block;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50px;
+      background: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      & span {
+        font-size: 2rem;
+        line-height: 6rem;
+        font-weight: 600;
+        margin-left: 1rem;
+      }
+      &:hover {
+        width: 25rem;
+      }
+      &--facebook {
+        color: #4267b2;
+        &:hover > div {
+          background: #4267b2;
+          color: #fff;
+        }
+      }
+      &--instagram {
+        color: #e1306c;
+        &:hover > div {
+          background: #e1306c;
+          color: #fff;
+        }
+      }
+      &--twitter {
+        color: #1da1f2;
+        &:hover > div {
+          background: #1da1f2;
+          color: #fff;
+        }
+      }
+    }
+    &-icon {
+      display: inline-block;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50px;
+      line-height: 6rem;
+      text-align: center;
+      box-sizing: border-box;
+      & i {
+        font-size: 2.5rem;
+        line-height: 6rem;
+      }
+    }
+  }
+  &__copyright {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    &__media {
+      transition: all 0.3s;
+      &-button:hover {
+        width: 6rem;
+        transform: scale(1.1);
+        & span {
+          display: none;
+        }
+      }
+    }
+  }
+}

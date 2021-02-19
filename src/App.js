@@ -17,6 +17,7 @@ import TrademarkRegistration from "./landing-pages/trademark-registration/Tradem
 import TrademarkObjection from "./landing-pages/trademark-objection/TrademarkObjection";
 import NavbarDemo from "./common/NavbarDemo";
 import TrademarkRenewal from "./landing-pages/trademark-renewal/TrademarkRenewal";
+import Proprietorship from "./landing-pages/proprietorship/Proprietorship";
 
 export const UserContext = createContext(null);
 
@@ -74,6 +75,7 @@ function App() {
               />
               <Route path="/one-person-company" component={OnePersonCompany} />
               <Route path="/section-eight-company" component={SectionEight} />
+              <Route path="/proprietorship" component={Proprietorship} />
               <Route
                 path="/trademark-registration"
                 component={TrademarkRegistration}

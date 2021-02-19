@@ -1,0 +1,55 @@
+@import "../../sass/variables.scss";
+.proprietorship-content {
+  background: $color-white-primary;
+}
+.proprietorship-container {
+  padding: 2rem;
+}
+
+.proprietorship {
+  &__allcontents {
+    width: 100%;
+    padding: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    & div h1 {
+      font-size: 3.6rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-ocean-green,
+        darken($color-ocean-green-dark, 10%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__about {
+    &-content {
+      padding: 2rem 0;
+      & li {
+        margin-left: 4rem;
+      }
+      & p,
+      li {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__advantage {
+    margin-top: 3rem;
+    &-content {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+    &-allcontent {
+      & > header {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        color: $color-dark-blue;
+      }
+      & main {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

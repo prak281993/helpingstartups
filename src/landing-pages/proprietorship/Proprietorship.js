@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import LandingPagesHeader from "../../common/header/LandingPagesHeader";
+import React, { useRef, useEffect, useState } from "react";
 import FeedbackAndServices from "../../common/FeedbackAndServices";
-import { TRADEMARK_OBJECTION } from "../../common/header/HeaderTitles";
-import TrademarkObjectionContent from "./TrademarkObjectionContent";
+import { PROPRIETORSHIP } from "../../common/header/HeaderTitles";
+import LandingPagesHeader from "../../common/header/LandingPagesHeader";
+import ProprietorshipContent from "./ProprietorshipContent";
 
-export default function TrademarkObjection() {
+export default function Proprietorship() {
   const headerRef = useRef();
   const contentDivRef = useRef();
   const formRef = useRef();
@@ -40,10 +40,10 @@ export default function TrademarkObjection() {
     <>
       <LandingPagesHeader
         headerRef={headerRef}
-        headerTitle={TRADEMARK_OBJECTION.title}
-        headerDesc={TRADEMARK_OBJECTION.desc}
+        headerTitle={PROPRIETORSHIP.title}
+        headerDesc={PROPRIETORSHIP.desc}
       />
-      <TrademarkObjectionContent
+      <ProprietorshipContent
         contentDivRef={contentDivRef}
         isFixedForm={isFixedForm}
         formRef={formRef}

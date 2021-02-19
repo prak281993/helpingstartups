@@ -91,7 +91,7 @@ export default function NavbarDemo() {
                               </li>
                               <li className="nav-item">
                                 <Link
-                                  to="/proprietorship-firm"
+                                  to="/proprietorship"
                                   className="nav-link text-small pb-0 "
                                 >
                                   Proprietorship Firm

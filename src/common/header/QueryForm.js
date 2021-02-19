@@ -1,3 +1,4 @@
+import { API } from "aws-amplify";
 import React, { useEffect, useState } from "react";
 import "./QueryForm.scss";
 
@@ -6,7 +7,30 @@ export default function QueryForm({ formRef, fromBody, isFixedForm }) {
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
   const [queryMessage, setQueryMessage] = useState("");
-  const sendMail = () => {};
+  const mailApi = "/hs/send-email";
+  const sendMail = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await API.post("helpingstartups", mailApi, {
+        body: {
+          fullname: fullname,
+          sender: email,
+          contactNumber: contactNumber,
+          queryMessage: queryMessage,
+          subject: "Query Mail",
+        },
+      });
+      if (response) {
+        setFullname("");
+        setEmail("");
+        setContactNumber("");
+        setQueryMessage("");
+        // handleToast(true);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   let formClass = fromBody
     ? "landing-query__form--custom"

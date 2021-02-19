@@ -31,8 +31,6 @@ app.use(cors());
 //   next();
 // });
 
-// app.use(cors());
-
 /**********************
  * Example get method *
  **********************/
@@ -135,13 +133,12 @@ app.post("/hs/send-email", (req, res) => {
   mailTransporter.sendMail(mailDetails, function (err, data) {
     if (err) {
       console.log("Error Occurs", err);
-      return res.status(400).json(err);
+      res.status(200).json(err);
     } else {
       console.log("Email sent successfully");
-      return res.status(200).json(data);
+      res.status(200).json("Email sent successfully");
     }
   });
-   res.send("Email sent succesfully");
 });
 
 /****************************
