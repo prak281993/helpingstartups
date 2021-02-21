@@ -2,10 +2,14 @@
 @import "../../sass/buttons.scss";
 
 .limited-liability {
+  &-content {
+    background: $color-white-primary;
+  }
   &__allcontents {
     background-color: #ffffff;
     width: 100%;
     padding: 5rem;
+    text-align: justify;
     & div h1 {
       font-size: 3.6rem;
       font-family: "Josefin Sans", sans-serif;
@@ -16,7 +20,7 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
+      text-align: left;
     }
   }
   &__about {
@@ -82,12 +86,13 @@
         margin: auto;
         list-style: none;
         display: flex;
-        margin: auto;
+        flex-wrap: wrap;
         & > li {
           padding: 0.5rem;
           list-style-type: none;
           display: flex;
           text-align: center;
+          margin: auto;
           & > span {
             width: 25rem;
             padding: 1.5rem;
@@ -109,11 +114,13 @@
         margin: auto;
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         & > li {
           padding: 0.5rem;
           list-style-type: none;
           display: flex;
           text-align: center;
+          margin: auto;
           & > span {
             width: 25rem;
             padding: 1rem;

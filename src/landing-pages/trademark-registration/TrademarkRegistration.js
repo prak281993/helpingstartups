@@ -5,21 +5,18 @@ import FeedbackAndServices from "../../common/FeedbackAndServices";
 import { TRADEMARK_REGISTRATION } from "../../common/header/HeaderTitles";
 
 export default function TrademarkRegistration() {
-  const headerRef = useRef();
   const contentDivRef = useRef();
   const formRef = useRef();
   const [isFixedForm, setIsFixedForm] = useState(false);
 
   const handleScroll = () => {
-    if (headerRef.current && contentDivRef.current) {
-      const headerHeight = headerRef.current.getBoundingClientRect().height;
-      const headerYPosition = headerRef.current.getBoundingClientRect().y;
+    if (contentDivRef.current) {
       const contentDivHeight = contentDivRef.current.getBoundingClientRect()
         .height;
       const contentDivYPosition = contentDivRef.current.getBoundingClientRect()
         .y;
       const formHeight = formRef.current.getBoundingClientRect().height;
-      if (headerHeight + headerYPosition <= 50) {
+      if (contentDivYPosition <= 50) {
         setIsFixedForm(true);
         if (contentDivHeight + contentDivYPosition <= formHeight + 50) {
           setIsFixedForm(false);
@@ -39,7 +36,6 @@ export default function TrademarkRegistration() {
   return (
     <div>
       <LandingPagesHeader
-        headerRef={headerRef}
         headerTitle={TRADEMARK_REGISTRATION.title}
         headerDesc={TRADEMARK_REGISTRATION.desc}
       />

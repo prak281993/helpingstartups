@@ -1,18 +1,51 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import FeedbackAndServices from "../../common/FeedbackAndServices";
-import LandingPagesHeader from "../../common/LandingPagesHeader";
-import BackgroundImage from "../../components/BackgroundImage";
+import { SECTION_EIGHT } from "../../common/header/HeaderTitles";
+import LandingPagesHeader from "../../common/header/LandingPagesHeader";
 import SectionEightContent from "./SectionEightContent";
 
 function SectionEight() {
-  const awsSrc = process.env.REACT_APP_AWS_URL;
+  const contentDivRef = useRef();
+  const formRef = useRef();
+  const [isFixedForm, setIsFixedForm] = useState(false);
+
+  const handleScroll = () => {
+    if (contentDivRef.current) {
+      const contentDivHeight = contentDivRef.current.getBoundingClientRect()
+        .height;
+      const contentDivYPosition = contentDivRef.current.getBoundingClientRect()
+        .y;
+      const formHeight = formRef.current.getBoundingClientRect().height;
+      if (contentDivYPosition <= 50) {
+        setIsFixedForm(true);
+        if (contentDivHeight + contentDivYPosition <= formHeight + 50) {
+          setIsFixedForm(false);
+        } else {
+          setIsFixedForm(true);
+        }
+      } else {
+        setIsFixedForm(false);
+      }
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      handleScroll();
+    });
+  }, []);
   return (
-    <div>
-      <BackgroundImage imageUrl={`${awsSrc}/section-eight-company.jpg`} />
-      <LandingPagesHeader startingPrice='9,999' companyType={"Section 8 Company"} />
-      <SectionEightContent />
+    <>
+      <LandingPagesHeader
+        headerTitle={SECTION_EIGHT.title}
+        headerDesc={SECTION_EIGHT.desc}
+      />
+      <SectionEightContent
+        contentDivRef={contentDivRef}
+        isFixedForm={isFixedForm}
+        formRef={formRef}
+      />
       <FeedbackAndServices />
-    </div>
+    </>
   );
 }
 

@@ -1,11 +1,16 @@
 @import "../../sass//variables.scss";
 @import "../../sass//buttons.scss";
+.private-limited-content {
+  background: $color-white-primary;
+}
 .private-limited {
   &__allcontents {
     background-color: #ffffff;
     width: 100%;
     padding: 5rem;
+    text-align: justify;
     & div h1 {
+      text-align: left;
       font-size: 3.6rem;
       font-family: "Josefin Sans", sans-serif;
       background-image: linear-gradient(
@@ -15,7 +20,6 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
     }
   }
   &__about {
@@ -99,7 +103,7 @@
           background-color: $color-green-general;
           color: $color-white-primary;
         }
-        &:before{
+        &:before {
           content: counter(step);
           counter-increment: step;
           width: 3rem;
@@ -140,15 +144,15 @@
       margin-top: 3rem;
     }
   }
-  &__compliance{
+  &__compliance {
     margin-top: 3rem;
-    &-content{
+    &-content {
       margin-top: 2rem;
       font-family: "Josefin Sans", sans-serif;
       font-size: 1.6rem;
     }
   }
-  &__timetaken{
+  &__timetaken {
     margin-top: 3rem;
   }
 }

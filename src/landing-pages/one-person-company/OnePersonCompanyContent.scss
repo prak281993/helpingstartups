@@ -2,10 +2,14 @@
 @import "../../sass/buttons.scss";
 
 .one-person {
+  &-content {
+    background: $color-white-primary;
+  }
   &__allcontents {
     background-color: #ffffff;
     width: 100%;
     padding: 5rem;
+    text-align: justify;
     & div h1 {
       font-size: 3.6rem;
       font-family: "Josefin Sans", sans-serif;
@@ -16,7 +20,7 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
+      text-align: left;
     }
   }
   &__about {

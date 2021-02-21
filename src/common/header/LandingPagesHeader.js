@@ -3,18 +3,14 @@ import Toast from "../../components/Toast";
 import "./LandingPagesHeader.scss";
 import QueryForm from "./QueryForm";
 
-export default function LandingPagesHeader({
-  headerRef,
-  headerTitle,
-  headerDesc,
-}) {
+export default function LandingPagesHeader({ headerTitle, headerDesc }) {
   const [displayToast, setDisplayToast] = useState(false);
   const handleToast = (isOpen) => {
     setDisplayToast(isOpen);
     setTimeout(() => setDisplayToast(false), 3000);
   };
   return (
-    <div ref={headerRef} className="landing-page-header">
+    <div className="landing-page-header">
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-12">
