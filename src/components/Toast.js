@@ -12,7 +12,7 @@ function Toast({ message }) {
         style={{
           position: "fixed",
           bottom: "0",
-          right: "0",
+          left: "0",
           width: "35rem",
           textAlign: "center",
           background: "linear-gradient(to right bottom, #058849, #0180a0)",

@@ -2,7 +2,12 @@ import { API } from "aws-amplify";
 import React, { useEffect, useState } from "react";
 import "./QueryForm.scss";
 
-export default function QueryForm({ formRef, fromBody, isFixedForm }) {
+export default function QueryForm({
+  formRef,
+  fromBody,
+  isFixedForm,
+  handleToast,
+}) {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [contactNumber, setContactNumber] = useState();
@@ -25,7 +30,7 @@ export default function QueryForm({ formRef, fromBody, isFixedForm }) {
         setEmail("");
         setContactNumber("");
         setQueryMessage("");
-        // handleToast(true);
+        handleToast(true);
       }
     } catch (err) {
       console.error(err);

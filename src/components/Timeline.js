@@ -4,9 +4,9 @@ import "./Timeline.scss";
 function Timeline({ data }) {
   return (
     <ul className="timeline">
-      {data.map((item) => {
+      {data.map((item, index) => {
         return (
-          <li className="timeline__item">
+          <li key={index} className="timeline__item">
             <div className="timeline__badge">{item.number}</div>
             <div className="timeline__panel">
               <div className="timeline__panel-header">
