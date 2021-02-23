@@ -9,24 +9,34 @@ export default function Footer() {
           <h1>Follow Us</h1>
         </div>
         <div className="footer__media">
-          <a href="" className="footer__media-button footer__media-button--facebook">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/helpingstartup.in/"
+            className="footer__media-button footer__media-button--facebook"
+          >
             <div className="footer__media-icon">
               <i className="fa fa-facebook"></i>
             </div>
-            <span>Helping Startup</span>
+            <span>Facebook</span>
           </a>
-          <div className="footer__media-button footer__media-button--instagram">
+          <a
+            className="footer__media-button footer__media-button--instagram"
+            href="#"
+          >
             <div className="footer__media-icon">
               <i className="fa fa-instagram"></i>
             </div>
             <span>Instagram</span>
-          </div>
-          <div className="footer__media-button footer__media-button--twitter">
+          </a>
+          <a
+            className="footer__media-button footer__media-button--twitter"
+            href="#"
+          >
             <div className="footer__media-icon">
               <i className="fa fa-twitter"></i>
             </div>
             <span>Twitter</span>
-          </div>
+          </a>
         </div>
         <div className="footer__copyright">
           <span>&#169; HelpingStartup</span>

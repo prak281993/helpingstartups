@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.scss';
+import "./Header.scss";
 
 function Header() {
   return (
@@ -7,19 +7,21 @@ function Header() {
       <div className="header__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">
-            B2B Saas Marketing Breakthroughs
+            helpingstartup, any time of day
           </span>
-          <span className="heading-primary--sub1">Wake Up. Kick SAAS. Repeat.</span>
+          <span className="heading-primary--sub1">
+          It's time to Kickstart your startup
+          </span>
         </h1>
         <div className="header__buttons">
           <a
-            href='/#section-service-registration'
+            href="/#section-service-registration"
             className="custom-btn custom-btn--primary custom-btn--animated"
           >
             Start a Business
           </a>
           <a
-            href='/#section-trademark-services'
+            href="/#section-trademark-services"
             className="custom-btn custom-btn--secondary custom-btn--animated"
           >
             Trademark Services

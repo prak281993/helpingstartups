@@ -6,7 +6,7 @@ function ServiceIcons() {
   return (
     <section className="section section-service-icons">
       <div className="section__service-icons">
-        <div className="section__service-icons-item" data-aos="fade-right">
+        <div className="section__service-icons-item" data-aos="flip-left">
           <span className="section__service-icon">
             <a
               href="#"
@@ -229,7 +229,7 @@ function ServiceIcons() {
             PROPRIETORSHIP REGISTRATION
           </span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-right">
+        <div className="section__service-icons-item" data-aos="flip-left">
           <span className="section__service-icon">
             <a
               href="#"
@@ -489,7 +489,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">COMPANY REGISTRATION</span>
         </div>
-        <div className="section__service-icons-item" data-aos="flip-left">
+        <div className="section__service-icons-item" data-aos="zoom-in">
           <span className="section__service-icon">
             <a
               href="#"
@@ -600,7 +600,7 @@ function ServiceIcons() {
             LLP/PARTNERSHIP REGISTRATION
           </span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-left">
+        <div className="section__service-icons-item" data-aos="flip-right">
           <span className="section__service-icon">
             <a
               href="#"
@@ -739,7 +739,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">MSME REGISTRATION</span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-left">
+        <div className="section__service-icons-item" data-aos="flip-right">
           <span className="section__service-icon">
             <a
               href="#"
@@ -801,7 +801,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">TRADEMARK SERVICES</span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-right">
+        <div className="section__service-icons-item" data-aos="flip-left">
           <span className="section__service-icon">
             <a
               href="#"
@@ -812,7 +812,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">GST RETURN</span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-right">
+        <div className="section__service-icons-item" data-aos="flip-left">
           <span className="section__service-icon">
             <a
               href="#"
@@ -888,7 +888,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">FSSAI FOOD LICENCE</span>
         </div>
-        <div className="section__service-icons-item" data-aos="flip-right">
+        <div className="section__service-icons-item" data-aos="zoom-in">
           <span className="section__service-icon">
             <a
               href="#"
@@ -961,7 +961,7 @@ function ServiceIcons() {
           </span>
           <span className="section__service-text">IMPORT EXPORT CODE</span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-left">
+        <div className="section__service-icons-item" data-aos="flip-right">
           <span className="section__service-icon">
             <a
               href="#"
@@ -1023,7 +1023,7 @@ function ServiceIcons() {
             STARTUP INDIA REGISTRATION
           </span>
         </div>
-        <div className="section__service-icons-item" data-aos="fade-left">
+        <div className="section__service-icons-item" data-aos="flip-right">
           <span className="section__service-icon">
             <a
               href="#"
