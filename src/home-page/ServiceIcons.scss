@@ -34,7 +34,7 @@
   }
 
   &__service-icons-item {
-    width: 22rem;
+    width: 23rem;
     height: 24rem;
     display: flex;
     flex-direction: column;
@@ -357,24 +357,26 @@
     }
   }
   
-  @media only screen and (max-width: 80rem) {
+  @media only screen and (max-width: 800px) {
     &__service-icons-item {
       width: 16rem;
-      height: 24rem;
     }
   }
 
-  @media only screen and (min-width: 80rem) and (max-width: 100rem) {
+  @media only screen and (min-width: 1201px) and (max-width: 1250px) {
     &__service-icons-item {
-      width: 23rem;
-      height: 24rem;
+      width: 22rem;
     }
   }
 
-  @media only screen and (min-width: 100rem) {
+  @media only screen and (min-width: 1301px) and (max-width:1540px) {
     &__service-icons-item {
-      width: 28rem;
-      height: 24rem;
+      width: 24rem;
+    }
+  }
+  @media only screen and (min-width: 1541px) {
+    &__service-icons-item {
+      width: 25rem;
     }
   }
 }

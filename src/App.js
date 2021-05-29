@@ -27,13 +27,12 @@ function App() {
   const [user, setUser] = useState();
 
   const handleClick = () => {
-    console.log("signed in");
+    // console.log("signed in");
   };
 
   useEffect(() => {
     (async function () {
       const session = await Auth.currentAuthenticatedUser();
-      console.log(session);
       if (session) {
         setAuthData(session);
         const user = {
